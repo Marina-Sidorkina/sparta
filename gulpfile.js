@@ -59,6 +59,7 @@ function styles() {
 function startwatch() {
  	watch(['source/**/*.js', '!source/**/*.min.js'], scripts);
   watch('source/**/sass/**/*', styles);
+  watch('source/**/*.html').on('change', browserSync.reload);
 }
 
 exports.browsersync = browsersync;
