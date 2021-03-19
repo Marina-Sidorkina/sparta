@@ -13,17 +13,17 @@ const del = require("del");
 // Server
 
 function browsersync() {
-	browserSync.init({
-		server: { baseDir: "source/" },
-		notify: false,
-		online: true
-	})
+  browserSync.init({
+    server: { baseDir: "source/" },
+    notify: false,
+    online: true
+  })
 }
 
 // Scripts
 
 function scripts() {
-	return src([
+  return src([
 		"source/js/index.js"
 		])
   .pipe(sourcemaps.init())
