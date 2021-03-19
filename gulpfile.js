@@ -70,6 +70,22 @@ function cleanimg() {
 	return del('source/images/dest/**/*', { force: true })
 }
 
+// Build
+
+function buildcopy() {
+	return src([
+		'source/css/**/*.min.css',
+		'source/js/**/*.min.js',
+		'source/images/dest/**/*',
+		'source/**/*.html',
+		], { base: 'source' })
+	.pipe(dest('build'))
+}
+
+function cleanbuild() {
+	return del('build/**/*', { force: true })
+}
+
 // Watcher
 
 function startwatch() {
@@ -87,4 +103,5 @@ exports.styles = styles;
 exports.images = images;
 exports.cleanimg = cleanimg;
 
-exports.default = parallel(images, styles, scripts, browsersync, startwatch);
+exports.default = parallel(styles, scripts, images, browsersync, startwatch);
+exports.build = series(cleanbuild, styles, scripts, images, buildcopy);
