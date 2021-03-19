@@ -8,5 +8,7 @@
   },
   "author": "Marina Sidorkina",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
