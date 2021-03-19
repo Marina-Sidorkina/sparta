@@ -28,5 +28,11 @@ function scripts() {
 	.pipe(browserSync.stream())
 }
 
+function startwatch() {
+ 	watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
+}
+
 exports.browsersync = browsersync;
 exports.scripts = scripts;
+
+exports.default = parallel(scripts, browsersync, startwatch);
