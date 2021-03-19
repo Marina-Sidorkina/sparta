@@ -62,6 +62,8 @@ function startwatch() {
   watch('source/**/*.html').on('change', browserSync.reload);
 }
 
+// Tasks
+
 exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.styles = styles;
