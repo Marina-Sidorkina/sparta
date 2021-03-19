@@ -9,6 +9,7 @@
   "author": "Marina Sidorkina",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2"
   }
 }
