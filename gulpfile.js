@@ -24,7 +24,6 @@ function server() {
 
 function scripts() {
   return src([
-		"source/js/test.js",
 		"source/js/index.js"
 		])
   .pipe(sourcemaps.init())
@@ -104,5 +103,5 @@ exports.styles = styles;
 exports.images = images;
 exports.deleteImages = deleteImages;
 
+exports.build = series(deleteBuild, styles, scripts,  series(deleteImages, images), build);
 exports.default = parallel(styles, scripts, images, server, watcher);
-exports.build = series(deleteBuild, styles, scripts, images, build);
