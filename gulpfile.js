@@ -1,5 +1,5 @@
 const { src, dest, parallel, series, watch } = require("gulp");
-const browserSync = require("browser-sync").create();
+const browsersync = require("browser-sync").create();
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify-es").default;
 const sourcemaps = require("gulp-sourcemaps");
@@ -12,8 +12,8 @@ const del = require("del");
 
 // Server
 
-function browsersync() {
-  browserSync.init({
+function server() {
+  browsersync.init({
     server: { baseDir: "source/" },
     notify: false,
     online: true
@@ -24,6 +24,7 @@ function browsersync() {
 
 function scripts() {
   return src([
+		"source/js/test.js",
 		"source/js/index.js"
 		])
   .pipe(sourcemaps.init())
@@ -31,7 +32,7 @@ function scripts() {
 	.pipe(uglify())
   .pipe(sourcemaps.write("."))
 	.pipe(dest("source/js/"))
-	.pipe(browserSync.stream())
+	.pipe(browsersync.stream())
 }
 
 // Styles
@@ -54,7 +55,7 @@ function styles() {
   }))
   .pipe(sourcemaps.write("."))
 	.pipe(dest("source/css/"))
-	.pipe(browserSync.stream())
+	.pipe(browsersync.stream())
 }
 
 // Images
@@ -66,13 +67,13 @@ function images() {
 	.pipe(dest("source/images/dest/"))
 }
 
-function cleanimg() {
+function deleteImages() {
 	return del("source/images/dest/**/*", { force: true })
 }
 
 // Build
 
-function buildcopy() {
+function build() {
 	return src([
 		"source/css/**/*.min.css",
 		"source/js/**/*.min.js",
@@ -82,26 +83,26 @@ function buildcopy() {
 	.pipe(dest("build"))
 }
 
-function cleanbuild() {
+function deleteBuild() {
 	return del("build/**/*", { force: true })
 }
 
 // Watcher
 
-function startwatch() {
+function watcher() {
  	watch(["source/**/*.js", "!source/**/*.min.js"], scripts);
   watch("source/**/sass/**/*", styles);
-  watch("source/**/*.html").on("change", browserSync.reload);
+  watch("source/**/*.html").on("change", browsersync.reload);
   watch("source/images/src/**/*", images);
 }
 
 // Tasks
 
-exports.browsersync = browsersync;
+exports.server = server;
 exports.scripts = scripts;
 exports.styles = styles;
 exports.images = images;
-exports.cleanimg = cleanimg;
+exports.deleteImages = deleteImages;
 
-exports.default = parallel(styles, scripts, images, browsersync, startwatch);
-exports.build = series(cleanbuild, styles, scripts, images, buildcopy);
+exports.default = parallel(styles, scripts, images, server, watcher);
+exports.build = series(deleteBuild, styles, scripts, images, build);
