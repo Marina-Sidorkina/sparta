@@ -2,6 +2,7 @@ const { src, dest, parallel, series, watch } = require("gulp");
 const browsersync = require("browser-sync").create();
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify-es").default;
+const babel = require('gulp-babel');
 const sourcemaps = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
@@ -27,6 +28,9 @@ function scripts() {
 		"source/js/index.js"
 		])
   .pipe(sourcemaps.init())
+	.pipe(babel({
+		presets: ['@babel/env']
+	}))
 	.pipe(concat("index.min.js"))
 	.pipe(uglify())
   .pipe(sourcemaps.write("."))
