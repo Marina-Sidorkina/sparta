@@ -103,5 +103,5 @@ exports.styles = styles;
 exports.images = images;
 exports.deleteImages = deleteImages;
 
-exports.build = series(deleteBuild, styles, scripts,  series(deleteImages, images), build);
-exports.default = parallel(styles, scripts, images, server, watcher);
+exports.build = series(deleteBuild, styles, scripts, deleteImages, images, build);
+exports.default = series(parallel(styles, scripts, images), parallel(server, watcher));
