@@ -26,7 +26,7 @@ function server() {
 function scripts() {
   return src([
 		"source/js/index.js"
-		])
+	])
   .pipe(sourcemaps.init())
 	.pipe(babel({
 		presets: ['@babel/env']
