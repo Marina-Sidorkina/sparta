@@ -13,6 +13,11 @@ $grid-half-column-width: 15px;
   );
 }
 
+.grid {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
 .grid::before {
   content: '';
 
@@ -21,27 +26,35 @@ $grid-half-column-width: 15px;
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 320px;
+  width: $mobile-width;
   pointer-events: none;
 
   @include create($grid-gutter);
 }
 
-@media (min-width: 750px) {
+@media (min-width: $tablet-width) {
+  .grid {
+    width: $tablet-width;
+  }
+
   .grid::before {
     $grid-gutter: 32.5px;
 
-    width: 750px;
+    width: $tablet-width;
 
     @include create($grid-gutter);
   }
 }
 
-@media (min-width: 1170px) {
+@media (min-width: $desktop-width) {
+  .grid {
+    width: $desktop-width;
+  }
+
   .grid::before {
     $grid-gutter: 67.5px;
 
-    width: 1170px;
+    width: $desktop-width;
 
     @include create($grid-gutter);
   }
