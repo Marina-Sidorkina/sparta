@@ -1,3 +1,32 @@
+@import 'dev/grid';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: red;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: 750px) {
+  body {
+    width: 750px;
+  }
+}
+
+@media (min-width: 1170px) {
+  body {
+    width: 1170px;
+  }
 }

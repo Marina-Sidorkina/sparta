@@ -1,0 +1,48 @@
+$grid-color: rgba(0, 100, 0, 0.2);
+$grid-half-column-width: 15px;
+
+@mixin create($grid-gutter) {
+  background-image: repeating-linear-gradient(
+    to right,
+    $grid-color 0,
+    $grid-color $grid-half-column-width,
+    transparent $grid-half-column-width,
+    transparent $grid-half-column-width + $grid-gutter,
+    $grid-color $grid-half-column-width + $grid-gutter,
+    $grid-color $grid-half-column-width + $grid-gutter + $grid-half-column-width
+  );
+}
+
+.grid::before {
+  content: '';
+
+  $grid-gutter: 23px;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  pointer-events: none;
+
+  @include create($grid-gutter);
+}
+
+@media (min-width: 750px) {
+  .grid::before {
+    $grid-gutter: 32.5px;
+
+    width: 750px;
+
+    @include create($grid-gutter);
+  }
+}
+
+@media (min-width: 1170px) {
+  .grid::before {
+    $grid-gutter: 67.5px;
+
+    width: 1170px;
+
+    @include create($grid-gutter);
+  }
+}
