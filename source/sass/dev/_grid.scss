@@ -1,4 +1,4 @@
-@import 'mixins';
+@import "mixins";
 
 $grid-color: rgba(0, 100, 0, 0.2);
 $grid-half-column-width: 15px;
@@ -9,7 +9,7 @@ $grid-half-column-width: 15px;
 }
 
 .grid::before {
-  content: '';
+  content: "";
 
   $grid-gutter: 23px;
 
