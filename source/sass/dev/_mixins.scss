@@ -1,0 +1,11 @@
+@mixin createGrid($grid-gutter, $grid-color, $grid-half-column-width) {
+  background-image: repeating-linear-gradient(
+    to right,
+    $grid-color 0,
+    $grid-color $grid-half-column-width,
+    transparent $grid-half-column-width,
+    transparent $grid-half-column-width + $grid-gutter,
+    $grid-color $grid-half-column-width + $grid-gutter,
+    $grid-color $grid-half-column-width + $grid-gutter + $grid-half-column-width
+  );
+}
