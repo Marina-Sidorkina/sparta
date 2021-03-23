@@ -1,7 +1,5 @@
+@import "variables";
 @import "mixins";
-
-$grid-color: rgba(0, 100, 0, 0.2);
-$grid-half-column-width: 15px;
 
 .grid {
   width: $mobile-width;
@@ -11,7 +9,7 @@ $grid-half-column-width: 15px;
 .grid::before {
   content: "";
 
-  $grid-gutter: 23px;
+  $grid-gutter: $grid-gutter-mobile;
 
   position: fixed;
   top: 0;
@@ -23,29 +21,25 @@ $grid-half-column-width: 15px;
 }
 
 @media (min-width: $tablet-width) {
-  .grid {
+  .grid,
+  .grid::before {
     width: $tablet-width;
   }
 
   .grid::before {
-    $grid-gutter: 32.5px;
-
-    width: $tablet-width;
-
+    $grid-gutter: $grid-gutter-tablet;
     @include createGrid($grid-gutter, $grid-color, $grid-half-column-width);
   }
 }
 
 @media (min-width: $desktop-width) {
-  .grid {
+  .grid,
+  .grid::before {
     width: $desktop-width;
   }
 
   .grid::before {
-    $grid-gutter: 67.5px;
-
-    width: $desktop-width;
-
+    $grid-gutter: $grid-gutter-desktop;
     @include createGrid($grid-gutter, $grid-color, $grid-half-column-width);
   }
 }
