@@ -82,6 +82,7 @@ function build() {
 		"source/js/**/*.min.js",
 		"source/images/dest/**/*",
 		"source/**/*.html",
+    "source/fonts/**/*.{woff,woff2}",
 		], { base: "source" })
 	.pipe(dest("build"))
 }
