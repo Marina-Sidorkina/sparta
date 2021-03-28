@@ -1,0 +1,16 @@
+@mixin container {
+   width: $mobile-content-width;
+   margin: 0 auto;
+
+   @media (min-width: $tablet-width) {
+   width: $tablet-content-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-content-width;
+  }
+}
+
+.container {
+  @include container;
+}

@@ -1,7 +1,7 @@
 @import "config/normalize";
-@import "config/breakpoints";
-@import "config/variables";
 @import "config/fonts";
 @import "config/common";
+@import "config/breakpoints";
+@import "config/variables";
+@import "config/mixins";
 @import "dev/grid";
-@import "blocks/app";
