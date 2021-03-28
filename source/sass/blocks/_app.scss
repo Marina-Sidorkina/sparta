@@ -1,15 +1,13 @@
 .app,
-.app_section,
-.app_block {
+.app_header,
+.app_main,
+.app_footer,
+.app_section {
   width: 100%;
+  min-width: 320px;
 }
 
 .app_container {
-  width: $mobile-width;
-  margin: 0 auto;
-}
-
-.app_content {
   width: $mobile-content-width;
   margin: 0 auto;
 }
@@ -17,20 +15,12 @@
 
 @media (min-width: $tablet-width) {
   .app_container {
-    width: $tablet-width;
-  }
-
-  .app_content {
     width: $tablet-content-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .app_container {
-    width: $desktop-width;
-  }
-
-  .app_content {
     width: $desktop-content-width;
   }
 }
