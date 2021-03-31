@@ -257,19 +257,29 @@
     <section class="questions">
       <div class="questions__container">
         <h2 class="questions__title">Есть вопросы?</h2>
-        <form class="questions__form" action="">
+        <form class="questions__form">
           <fieldset class="questions__fieldset">
             <legend class="questions__legend">Оставьте свой номер телефона, наши менеджеры с вами свяжутся и проконсультируют</legend>
             <input class="questions__name" type="text" name="name" id="name" value="Имя">
             <input class="questions__tel" type="tel" name="tel" id="tel" value="Телефон">
           </fieldset>
-          <button class="questions__submit" type="submit" name="question" formaction="#" formmethod="post">Отправить</button>
+          <button class="questions__submit" type="submit" name="question" formaction="#" formmethod="post" aria-label="Отправить запрос на звонок">Отправить</button>
         </form>
       </div>
     </section>
   </main>
-
-  <footer></footer>
+  <!--FOOTER-->
+  <footer>
+    <div class="footer__container">
+      <picture>
+        <img class="footer__logo" src="" alt="Логотип сайта"
+          aria-label="Логотип сайта спецкурса по выживанию в экстремальных условиях">
+      </picture>
+      <span class="footer__year">2021</span>
+      <a class="footer__link" href="#">Политика конфиденциальности</a>
+      <a class="footer__link" href="tel:+79304150252" aria-label="Позвонить по указанному телефону">+7 (930) 415 02 52</a>
+    </div>
+  </footer>
 
 	<script src="js/index.min.js"></script>
 </body>
