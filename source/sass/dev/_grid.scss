@@ -20,7 +20,7 @@
   @include createGrid($grid-gutter, $grid-color, $grid-half-column-width);
 }
 
-@media (min-width: $tablet-width) {
+/*@media (min-width: $tablet-width) {
   .grid::before {
     width: $tablet-width;
   }
@@ -40,4 +40,4 @@
     $grid-gutter: $grid-gutter-desktop;
     @include createGrid($grid-gutter, $grid-color, $grid-half-column-width);
   }
-}
+}*/
