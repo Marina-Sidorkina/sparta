@@ -1,0 +1,41 @@
+.short-plan {
+  display: flex;
+  align-items: center;
+
+  min-height: 47px;
+  @include resetSpaces;
+  padding-left: 12px;
+
+  font-family: "Core-95-Black", "Arial", sans-serif;
+  font-size: 14.4px;
+  text-transform: uppercase;
+  color: $text-color-dark;
+
+  list-style: none;
+
+  background: url(../../images/dest/header/short-plan/background-mobile.png) no-repeat;
+  background-size: 205px 40px;
+  background-position: left center;
+}
+
+.short-plan__item:nth-child(1) {
+  margin-right: 64px;
+}
+
+.short-plan__item:nth-child(2) {
+  margin-right: 62px;
+}
+
+.short-plan__item:nth-child(3) {
+  margin-right: 25px;
+}
+
+.short-plan__item:nth-child(4) {
+  flex-shrink: 0;
+  width: 77px;
+  margin-top: 5px;
+  font-family: "Core-35-LightIt", "Arial", sans-serif;
+  font-size: 14px;
+  text-transform: none;
+  color: $text-color-light;
+}

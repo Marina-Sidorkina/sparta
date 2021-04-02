@@ -10,3 +10,8 @@
     width: $desktop-content-width;
   }*/
 }
+
+@mixin resetSpaces {
+  margin: 0;
+  padding: 0;
+}
