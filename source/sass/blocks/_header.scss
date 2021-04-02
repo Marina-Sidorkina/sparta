@@ -1,6 +1,8 @@
 .header {
   width: $mobile-width;
+  min-height: 600px;
   padding-top: 11px;
+
   background: url(../../images/dest/header/background-mobile.jpg) top no-repeat #c3726a;
   background-size: cover;
 }
