@@ -1,7 +1,8 @@
 .header {
   width: $mobile-width;
   padding-top: 11px;
-  background-color: #c3726a;
+  background: url(../../images/dest/header/background-mobile.jpg) top no-repeat #c3726a;
+  background-size: cover;
 }
 
 .header__container {
@@ -15,23 +16,27 @@
 .header__title {
   display: flex;
   flex-direction: column;
-
   margin: 0;
 
   .header__title-first {
-    margin-left: -6px;
+    height: 99px;
+    margin-left: -5.5px;
 
     font-family: "Besom", "Arial", sans-serif;
     font-size: 102px;
     letter-spacing: 4.5px;
+    text-shadow: -0.279px 3.99px 7.92px rgba(0, 0, 0, 0.34);
     color: $text-color-colored;
   }
 
   .header__title-second {
+    margin-left: 3px;
+
     font-family: "Core-95-Black", "Arial", sans-serif;
     font-size: 38px;
     text-transform: uppercase;
     letter-spacing: 1.9px;
+    white-space: nowrap;
     color: $text-color-light;
   }
 }
