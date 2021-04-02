@@ -1,8 +1,37 @@
 .header {
+  width: $mobile-width;
   padding-top: 11px;
   background-color: #c3726a;
 }
 
 .header__container {
   @include container;
+}
+
+.header__top-panel {
+  margin-bottom: 10px;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  .header__title-first {
+    margin-left: -6px;
+
+    font-family: "Besom", "Arial", sans-serif;
+    font-size: 102px;
+    letter-spacing: 4.5px;
+    color: $text-color-colored;
+  }
+
+  .header__title-second {
+    font-family: "Core-95-Black", "Arial", sans-serif;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+    color: $text-color-light;
+  }
 }
