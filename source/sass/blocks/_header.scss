@@ -1,4 +1,8 @@
 .header {
+  @include column;
+  justify-content: space-between;
+  padding-bottom: 116px;
+
   width: $mobile-width;
   min-height: 600px;
   padding-top: 11px;
@@ -12,18 +16,17 @@
 }
 
 .header__top-panel {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .header__title {
-  display: flex;
-  flex-direction: column;
+  @include column;
   margin: 0;
   margin-bottom: 30px;
 
   .header__title-first {
     height: 99px;
-    margin-left: -5.5px;
+    margin-left: 5px;
 
     font-family: "Besom", "Arial", sans-serif;
     font-size: 102px;
@@ -33,7 +36,7 @@
   }
 
   .header__title-second {
-    margin-left: 3px;
+    margin-left: 5px;
 
     font-family: "Core-95-Black", "Arial", sans-serif;
     font-size: 38px;

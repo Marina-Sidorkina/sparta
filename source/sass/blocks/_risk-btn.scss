@@ -1,0 +1,30 @@
+.risk-btn {
+  display: block;
+  width: 307px;
+  height: 73px;
+  padding-left: 107px;
+
+  background: url(../../images/dest/risk-btn/background-mobile.png) no-repeat;
+  background-size: 307px 73px;
+  background-position: center;
+
+  font-family: "Core-95-Black", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: 0.9px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-color-light;
+
+  transition-property: background;
+  transition-duration: 150ms;
+}
+
+.risk-btn:hover {
+  background: url(../../images/dest/risk-btn/background-hover-mobile.png) no-repeat;
+}
+
+.risk-btn:active {
+  padding-top: 1px;
+  background: url(../../images/dest/risk-btn/background-active-mobile.png) no-repeat;
+}
