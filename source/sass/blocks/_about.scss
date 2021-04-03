@@ -1,3 +1,9 @@
 .about__container {
   @include container;
+  @include column;
+}
+
+.about__title {
+  @include sectionHeader;
+  @include resetSpaces;
 }
