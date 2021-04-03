@@ -20,25 +20,25 @@
   margin-bottom: 85px;
 
   color: $text-color-medium;
-}
 
-.about__list::before {
-  @include pseudo(auto, auto, "Start");
-  top: -99px;
-  left: 126px;
+  &:before {
+    @include pseudo(auto, auto, "Start");
+    top: -99px;
+    left: 126px;
 
-  font-family: "Core-35-Light", "Arial", sans-serif;
-  font-size: 24px;
-  color: $text-color-colored;
-}
+    font-family: "Core-35-Light", "Arial", sans-serif;
+    font-size: 24px;
+    color: $text-color-colored;
+  }
 
-.about__list::after {
-  @include pseudo(auto, auto, "Finish");
-  bottom: -59px;
+  &:after {
+    @include pseudo(auto, auto, "Finish");
+    bottom: -59px;
 
-  font-family: "Core-35-Light", "Arial", sans-serif;
-  font-size: 24px;
-  color: $text-color-colored;
+    font-family: "Core-35-Light", "Arial", sans-serif;
+    font-size: 24px;
+    color: $text-color-colored;
+  }
 }
 
 .about__item {
@@ -51,66 +51,70 @@
   margin-bottom: 53px;
 }
 
-.about__item:nth-child(1)::before {
-  @include pseudo(290px, 237px, "");
-  top: 3px;
+.about__item:nth-child(1) {
+  &:before {
+    @include pseudo(290px, 237px, "");
+    top: 3px;
 
-  background: url(../../images/dest/about/item-1/before-mobile.png) no-repeat;
+    background: url(../../images/dest/about/item-1/before-mobile.png) no-repeat;
+  }
+
+  &:after {
+    @include pseudo(21px, 21px, "");
+    top: -55px;
+    left: 142px;
+
+    background: url(../../images/dest/about/pseudo-mobile.png) no-repeat;
+  }
 }
 
-.about__item:nth-child(1)::after {
-  @include pseudo(21px, 21px, "");
-  top: -55px;
-  left: 142px;
+.about__item:nth-child(2) {
+  &:before {
+    @include pseudo(290px, 243px, "");
+    top: -5px;
 
-  background: url(../../images/dest/about/pseudo-mobile.png) no-repeat;
-}
+    background: url(../../images/dest/about/item-2/before-mobile.png) no-repeat;
+  }
 
-.about__item:nth-child(2)::before {
-  @include pseudo(290px, 243px, "");
-  top: -5px;
-
-  background: url(../../images/dest/about/item-2/before-mobile.png) no-repeat;
-}
-
-.about__item:nth-child(2) .about__description {
-  width: 270px;
+  .about__description {
+    width: 270px;
+  }
 }
 
 .about__item:nth-child(3) {
   min-height: 521px;
-}
 
-.about__item:nth-child(3)::before {
-  @include pseudo(314px, 333px, "");
-  top: -14px;
-  left: -15px;
+  &:before {
+    @include pseudo(314px, 333px, "");
+    top: -14px;
+    left: -15px;
 
-  background: url(../../images/dest/about/item-3/before-mobile.png) no-repeat;
-}
+    background: url(../../images/dest/about/item-3/before-mobile.png) no-repeat;
+  }
 
-.about__item:nth-child(3) .about__description {
-  width: 286px;
+  .about__description {
+    width: 286px;
+  }
 }
 
 .about__item:nth-child(4) {
   min-height: 387px;
-}
 
-.about__item:nth-child(4)::before {
-  @include pseudo(294px, 241px, "");
-  top: -5px;
-  left: 4px;
+  &:before {
+    @include pseudo(294px, 241px, "");
+    top: -5px;
+    left: 4px;
 
-  background: url(../../images/dest/about/item-4/before-mobile.png) no-repeat;
-}
+    background: url(../../images/dest/about/item-4/before-mobile.png) no-repeat;
+  }
 
-.about__item:nth-child(4)::after {
-  @include pseudo(21px, 21px, "");
-  bottom: -73px;
-  left: 135px;
+  &:after {
+    @include pseudo(21px, 21px, "");
+    bottom: -73px;
+    left: 135px;
 
-  background: url(../../images/dest/about/pseudo-mobile.png) no-repeat;
+    background: url(../../images/dest/about/pseudo-mobile.png) no-repeat;
+  }
 }
 
 .about__subtitle {
