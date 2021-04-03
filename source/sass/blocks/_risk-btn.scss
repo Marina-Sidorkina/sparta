@@ -4,9 +4,8 @@
   height: 73px;
   padding-left: 107px;
 
-  background: url(../../images/dest/risk-btn/background-mobile.png) no-repeat;
-  background-size: 307px 73px;
-  background-position: center;
+  background: url(../../images/dest/risk-btn/sprite-mobile.png);
+  background-position: 0px -146px;
 
   font-family: "Core-95-Black", "Arial", sans-serif;
   font-size: 18px;
@@ -15,16 +14,15 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $text-color-light;
-
-  transition-property: background;
-  transition-duration: 150ms;
 }
 
 .risk-btn:hover {
-  background: url(../../images/dest/risk-btn/background-hover-mobile.png) no-repeat;
+  background: url(../../images/dest/risk-btn/sprite-mobile.png) no-repeat;
+  background-position: 0px -73px;
 }
 
 .risk-btn:active {
   padding-top: 1px;
-  background: url(../../images/dest/risk-btn/background-active-mobile.png) no-repeat;
+  background: url(../../images/dest/risk-btn/sprite-mobile.png) no-repeat;
+  background-position: 0px 0px;
 }
