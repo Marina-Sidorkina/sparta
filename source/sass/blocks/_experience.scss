@@ -4,31 +4,6 @@
   padding-top: 27px;
 }
 
-.experience__list {
-  @include resetList;
-}
-
-.experience__subtitle {
-  @include resetSpaces;
-
-  font-family: "Core-65-Bold", "Arial", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1.2px;
-  line-height: 24px;
-  text-align: center;
-  color: $text-color-medium;
-}
-
-.experience__description {
-  @include resetSpaces;
-
-  font-family: "Core-45-Regular", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: $text-color-medium;
-}
-
 .experience__title--main {
   @include resetSpaces;
   @include sectionHeaderMobile;
@@ -37,123 +12,6 @@
 
   line-height: 43px;
   text-align: center;
-}
-
-.experience__list--main {
-  margin-bottom: 81px;
-}
-
-.experience__item--main:nth-child(1) {
-  position: relative;
-  min-height: 250px;
-  padding-top: 136px;
-  margin-bottom: 45px;
-
-  .experience__subtitle {
-    margin-left: 2px;
-    margin-bottom: 14px;
-  }
-
-  &:after {
-    @include pseudo(110px, 94px, "");
-    top: 16px;
-    left: 85px;
-
-    background: url(../../images/dest/experience/01/mobile.png) no-repeat;
-    background-position: center;
-  }
-}
-
-.experience__item--main:nth-child(2) {
-  position: relative;
-  min-height: 250px;
-  padding-top: 116px;
-  margin-bottom: 53px;
-
-  .experience__subtitle {
-    margin-left: 2px;
-    margin-bottom: 14px;
-
-    letter-spacing: 1px;
-    white-space: nowrap;
-  }
-
-  &:after {
-    @include pseudo(118px, 92px, "");
-    top: -2px;
-    left: 87px;
-
-    background: url(../../images/dest/experience/02/mobile.png) no-repeat;
-    background-position: center;
-  }
-}
-
-.experience__item--main:nth-child(3) {
-  position: relative;
-  min-height: 250px;
-  padding-top: 119px;
-  margin-bottom: 50px;
-
-  .experience__subtitle {
-    margin-left: 2px;
-    margin-bottom: 14px;
-
-    letter-spacing: 1px;
-  }
-
-  &:after {
-    @include pseudo(121px, 92px, "");
-    top: -1px;
-    left: 82px;
-
-    background: url(../../images/dest/experience/03/mobile.png) no-repeat;
-    background-position: center;
-  }
-}
-
-.experience__item--main:nth-child(4) {
-  position: relative;
-  min-height: 228px;
-  padding-top: 118px;
-  margin-bottom: 55px;
-
-  .experience__subtitle {
-    margin-left: 2px;
-    margin-bottom: 14px;
-
-    letter-spacing: 1px;
-  }
-
-  &:after {
-    @include pseudo(111px, 96px, "");
-    top: -1px;
-    left: 96px;
-
-    background: url(../../images/dest/experience/04/mobile.png) no-repeat;
-    background-position: center;
-  }
-}
-
-.experience__item--main:nth-child(5) {
-  position: relative;
-  min-height: 210px;
-  padding-top: 123px;
-
-  .experience__subtitle {
-    margin-left: 2px;
-    margin-bottom: 14px;
-
-    letter-spacing: 1px;
-  }
-
-  &:after {
-    @include pseudo(115px, 96px, "");
-    top: 0;
-    left: 87px;
-
-    background: url(../../images/dest/experience/05/mobile.png) no-repeat;
-    background-position: center;
-  }
 }
 
 .experience__title--add {
@@ -180,5 +38,3 @@
     margin-left: -6px;
   }
 }
-
-

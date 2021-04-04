@@ -1,0 +1,138 @@
+.art-marked-list {
+  @include resetList;
+  margin-bottom: 81px;
+}
+
+.art-marked-list__title {
+  @include resetSpaces;
+
+  font-family: "Core-65-Bold", "Arial", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: 24px;
+  text-align: center;
+  color: $text-color-medium;
+}
+
+.art-marked-list__description {
+  @include resetSpaces;
+
+  font-family: "Core-45-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $text-color-medium;
+}
+
+.art-marked-list__item:nth-child(1) {
+  position: relative;
+  min-height: 250px;
+  padding-top: 136px;
+  margin-bottom: 45px;
+
+  .art-marked-list__title {
+    margin-left: 2px;
+    margin-bottom: 14px;
+  }
+
+  &:after {
+    @include pseudo(110px, 94px, "");
+    top: 16px;
+    left: 85px;
+
+    background: url(../../images/dest/experience/01/mobile.png) no-repeat;
+    background-position: center;
+  }
+}
+
+.art-marked-list__item:nth-child(2) {
+  position: relative;
+  min-height: 250px;
+  padding-top: 116px;
+  margin-bottom: 53px;
+
+  .art-marked-list__title {
+    margin-left: 2px;
+    margin-bottom: 14px;
+
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  &:after {
+    @include pseudo(118px, 92px, "");
+    top: -2px;
+    left: 87px;
+
+    background: url(../../images/dest/experience/02/mobile.png) no-repeat;
+    background-position: center;
+  }
+}
+
+.art-marked-list__item:nth-child(3) {
+  position: relative;
+  min-height: 250px;
+  padding-top: 118px;
+  margin-bottom: 51px;
+
+  .art-marked-list__title {
+    margin-left: 2px;
+    margin-bottom: 14px;
+
+    letter-spacing: 1px;
+  }
+
+  &:after {
+    @include pseudo(121px, 92px, "");
+    top: -1px;
+    left: 82px;
+
+    background: url(../../images/dest/experience/03/mobile.png) no-repeat;
+    background-position: center;
+  }
+}
+
+.art-marked-list__item:nth-child(4) {
+  position: relative;
+  min-height: 228px;
+  padding-top: 118px;
+  margin-bottom: 55px;
+
+  .art-marked-list__title {
+    margin-left: 2px;
+    margin-bottom: 14px;
+
+    letter-spacing: 1px;
+  }
+
+  &:after {
+    @include pseudo(111px, 96px, "");
+    top: -1px;
+    left: 96px;
+
+    background: url(../../images/dest/experience/04/mobile.png) no-repeat;
+    background-position: center;
+  }
+}
+
+.art-marked-list__item:nth-child(5) {
+  position: relative;
+  min-height: 210px;
+  padding-top: 123px;
+
+  .art-marked-list__title {
+    margin-left: 2px;
+    margin-bottom: 14px;
+
+    letter-spacing: 1px;
+  }
+
+  &:after {
+    @include pseudo(115px, 96px, "");
+    top: 0;
+    left: 87px;
+
+    background: url(../../images/dest/experience/05/mobile.png) no-repeat;
+    background-position: center;
+  }
+}
