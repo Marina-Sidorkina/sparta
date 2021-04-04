@@ -44,7 +44,7 @@
 .about__item {
   position: relative;
   @include column;
-  justify-content: flex-end;
+  //justify-content: flex-end;
 
   width: 100%;
   min-height: 366px;
@@ -52,6 +52,8 @@
 }
 
 .about__item:nth-child(1) {
+  padding-top: 256px;
+
   &:before {
     @include pseudo(290px, 237px, "");
     top: 3px;
@@ -69,6 +71,8 @@
 }
 
 .about__item:nth-child(2) {
+  padding-top: 256px;
+
   &:before {
     @include pseudo(290px, 243px, "");
     top: -5px;
@@ -83,6 +87,7 @@
 
 .about__item:nth-child(3) {
   min-height: 521px;
+  padding-top: 339px;
 
   &:before {
     @include pseudo(314px, 333px, "");
@@ -94,11 +99,13 @@
 
   .about__description {
     width: 286px;
+    padding-left: 3px;
   }
 }
 
 .about__item:nth-child(4) {
   min-height: 387px;
+  padding-top: 253px;
 
   &:before {
     @include pseudo(294px, 241px, "");
