@@ -1,3 +1,149 @@
+.goals {
+  width: 320px;
+  min-height: 1388px;
+
+  background: url(../../images/dest/goals/background/mobile.png) no-repeat;
+  background-size: 320px 1388px;
+  background-position: top;
+}
+
 .goals__container {
   @include container;
+  @include column;
+  padding-top: 199px;
+}
+
+.goals__title {
+  @include resetSpaces;
+  font-family: "Core-95-Black", "Arial", sans-serif;
+  font-size: 36px;
+  letter-spacing: 1.8px;
+  line-height: 43.5px;
+  text-transform: uppercase;
+  color: $text-color-light;
+}
+
+.goals__subtitle {
+  @include resetSpaces;
+  font-family: "Core-65-Bold", "Arial", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $text-color-light;
+}
+
+.goals__description {
+  @include resetSpaces;
+  font-family: "Core-45-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color-light;
+}
+
+.goals__title--main {
+  width: 216px;
+  margin-left: 13.5px;
+  margin-bottom: 100px;
+}
+
+.goals__list--main {
+  @include resetList;
+  padding-top: 12px;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-bottom: 103px;
+
+  .goals__item:nth-child(1) {
+    margin-bottom: 45px;
+    position: relative;
+
+    &:before {
+      @include pseudo(auto, auto, "01");
+      top: -14px;
+      left: -2px;
+
+      font-family: "Besom", "Arial", sans-serif;
+      font-size: 45.92px;
+      line-height: 45.92px;
+      letter-spacing: 2.3px;
+      color: $text-color-light;
+      opacity: 0.15;
+    }
+
+    .goals__subtitle {
+      padding-left: 53px;
+      margin-bottom: 14px;
+    }
+  }
+
+  .goals__item:nth-child(2) {
+    position: relative;
+
+    &:before {
+      @include pseudo(auto, auto, "02");
+      top: -14px;
+      left: 1px;
+
+      font-family: "Besom", "Arial", sans-serif;
+      font-size: 45.92px;
+      line-height: 45.92px;
+      letter-spacing: 2.3px;
+      color: $text-color-light;
+      opacity: 0.15;
+    }
+
+    .goals__subtitle {
+      padding-left: 56px;
+      margin-bottom: 15px;
+    }
+
+    .goals__description {
+      padding-left: 2px;
+    }
+  }
+}
+
+.goals__title--exept {
+  position: relative;
+  width: 100%;
+  padding-left: 4px;
+
+  &:after {
+    @include pseudo(106px, 116px, "");
+    top: -14px;
+    right: -5px;
+
+    background: url(../../images/dest/goals/mark/mobile.png) no-repeat;
+    background-position: center;
+  }
+}
+
+.goals__list--exept {
+  @include resetList;
+  padding-top: 45px;
+
+  .goals__item:nth-child(1) {
+    margin-bottom: 39px;
+
+    .goals__subtitle {
+      padding-left: 2px;
+      margin-bottom: 16px;
+    }
+
+    .goals__description {
+      padding-left: 2px;
+    }
+  }
+
+  .goals__item:nth-child(2) {
+    .goals__subtitle {
+      padding-left: 4px;
+      margin-bottom: 16px;
+    }
+
+    .goals__description {
+      padding-left: 5px;
+    }
+  }
 }
