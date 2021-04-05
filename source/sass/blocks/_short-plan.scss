@@ -4,10 +4,12 @@
 
   @include resetList;
   min-height: 47px;
-  padding-left: 12px;
+  padding-left: 13px;
+  padding-top: 1px;
+  margin-left: -2px;
 
   font-family: "Core-95-Black", "Arial", sans-serif;
-  font-size: 14.4px;
+  font-size: 15px;
   text-transform: uppercase;
   color: $text-color-dark;
 
@@ -17,7 +19,7 @@
 }
 
 .short-plan__item:nth-child(1) {
-  margin-right: 64px;
+  margin-right: 62.5px;
 }
 
 .short-plan__item:nth-child(2) {
@@ -31,7 +33,7 @@
 .short-plan__item:nth-child(4) {
   flex-shrink: 0;
   width: 77px;
-  margin-top: 5px;
+  margin-top: 3px;
   font-family: "Core-35-LightIt", "Arial", sans-serif;
   font-size: 14px;
   text-transform: none;

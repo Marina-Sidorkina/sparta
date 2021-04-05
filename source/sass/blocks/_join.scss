@@ -1,3 +1,45 @@
+.join {
+  @include column;
+  width: 320px;
+  min-height: 510px;
+
+  background: url(../../images/dest/join/background-mobile.png) no-repeat;
+  background-size: 320px 510px;
+  background-position: top;
+}
+
 .join__container {
   @include container;
+  padding-top: 140px;
+}
+
+.join__title {
+  @include column;
+  @include resetSpaces;
+  align-items: stretch;
+  margin-bottom: 52px;
+}
+
+.join__accent {
+  margin-left: -1px;
+  font-family: "Besom", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 80px;
+  letter-spacing: 4px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: $text-color-colored;
+}
+
+.join__plain {
+  margin-top: -3px;
+  margin-left: 0.5px;
+
+  font-family: "Core-95-Black", "Arial", sans-serif;
+  font-size: 27px;
+  letter-spacing: 1.35px;
+  line-height: 27px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $text-color-light;
 }

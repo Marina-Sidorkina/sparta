@@ -9,7 +9,7 @@
 
   font-family: "Core-95-Black", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 60px;
+  line-height: 58px;
   letter-spacing: 0.9px;
   text-decoration: none;
   text-transform: uppercase;
@@ -25,4 +25,12 @@
   padding-top: 1px;
   background: url(../../images/dest/risk-btn/sprite-mobile.png) no-repeat;
   background-position: 0px 0px;
+}
+
+.risk-btn--header {
+  margin-left: 1px;
+}
+
+.risk-btn--join {
+  margin-left: 8px;
 }
