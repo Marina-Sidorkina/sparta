@@ -1,6 +1,7 @@
 .skills {
   width: 320px;
   min-height: 842px;
+  margin-bottom: 48px;
 
   background: url(../../images/dest/skills/background-mobile.png) no-repeat;
   background-size: 107px 842px;
@@ -64,5 +65,5 @@
 .skills__item:nth-child(5) {
   padding-left: 58px;
   padding-right: 10px;
-  margin-bottom: 64px;
+  margin-bottom: 0;
 }
