@@ -1,0 +1,29 @@
+.bio {
+  @include resetList;
+  padding-left: 44px;
+
+  font-family: "Core-45-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color-medium;
+}
+
+.bio__item {
+  margin-bottom: 24px;
+
+  .bio__nowrap {
+    white-space: nowrap;
+  }
+}
+
+.bio__item:nth-child(3) {
+  margin-bottom: 26px;
+  margin-left: 1px;
+}
+
+.bio__item:nth-child(4),
+.bio__item:nth-child(5),
+.bio__item:nth-child(6),
+.bio__item:nth-child(7) {
+  margin-left: 2px;
+}

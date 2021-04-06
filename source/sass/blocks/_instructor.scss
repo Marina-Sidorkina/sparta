@@ -1,3 +1,36 @@
+.instructor {
+  background: url(../../images/dest/instructor/background/mobile.png) no-repeat;
+  background-size: 320px 584px;
+  background-position: top 464px left 0;
+}
+
 .instructor__container {
   @include container;
+  @include column;
+  align-items: stretch;
+}
+
+.instructor__title {
+  @include sectionHeaderMobile;
+  @include resetSpaces;
+  padding-left: 7px;
+  margin-bottom: 52px;
+  text-align: center;
+}
+
+.instructor__picture {
+  margin-bottom: 15px;
+}
+
+.instructor__name {
+  @include resetSpaces;
+  margin-left: -3px;
+  margin-bottom: 32px;
+
+  font-family: "Core-65-Bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: $text-color-colored;
 }
