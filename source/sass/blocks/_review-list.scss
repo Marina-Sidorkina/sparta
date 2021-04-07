@@ -1,0 +1,100 @@
+.review-list {
+  @include resetList;
+}
+
+.review-list__item {
+  @include column;
+}
+
+.review-list__picture {
+  width: 117px;
+  height: 156px;
+  margin-left: 1px;
+  margin-bottom: 30px;
+}
+
+.review-list__author {
+  @include resetSpaces;
+  margin-bottom: 23px;
+
+  font-family: "Core-65-Bold", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: $text-color-medium;
+}
+
+.review-list__text {
+  @include resetSpaces;
+  height: 145px;
+  margin-bottom: 18px;
+
+  font-family: "Core-45-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $text-color-medium;
+
+  overflow-y: hidden;
+}
+
+.review-list__button {
+  @include resetSpaces;
+  position: relative;
+  display: block;
+  width: 150px;
+  margin-left: -5px;
+  padding-top: 1px;
+
+  font-family: "Core-45-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: $text-color-medium;
+
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  background: transparent;
+
+  &::before {
+    @include pseudo(151px, 1px, "");
+    bottom: -2px;
+    left: 1px;
+
+    background: url("../images/dest/review-list/line/sprite-mobile.png") no-repeat;
+    background-position: 0px -1px;
+  }
+
+  &::after {
+    @include pseudo(9px, 6px, "");
+    top: 12px;
+    right: -3px;
+
+    background: url("../images/dest/review-list/button/sprite-mobile.png") no-repeat;
+    background-position: -9px 0px;
+  }
+}
+
+.review-list__button:hover {
+  color: $text-color-colored;
+
+  &::before {
+    background-position: 0px 0px;
+  }
+
+  &::after {
+    background-position: 0px 0px;
+  }
+}
+
+.review-list__button:active {
+  color: $text-color-medium;
+
+  &::before {
+    background-position: 0px -1px;
+  }
+
+  &::after {
+    background-position: -9px 0px;
+  }
+}

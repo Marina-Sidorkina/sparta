@@ -3,6 +3,7 @@
   width: 292px;
   height: 164px;
   margin: 0 auto;
+  margin-bottom: 103px;
 }
 
 .video__play {
@@ -17,6 +18,7 @@
   cursor: pointer;
   transform: translateX(-50%) translateY(-50%);
 
+  background: transparent;
   background: url("../images/dest/video/button/sprite-mobile.png") no-repeat;
   background-position: -125px 0px;
 }
