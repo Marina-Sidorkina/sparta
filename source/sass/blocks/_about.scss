@@ -58,7 +58,7 @@
     @include pseudo(290px, 237px, "");
     top: 3px;
 
-    background: url(../../images/dest/about/item-1/before-mobile.png) no-repeat;
+    background: url("../images/dest/about/item-1/before-mobile.png") no-repeat;
   }
 
   &:after {
@@ -66,7 +66,7 @@
     top: -55px;
     left: 142px;
 
-    background: url(../../images/dest/about/pseudo-mobile.png) no-repeat;
+    background: url("../images/dest/about/pseudo-mobile.png") no-repeat;
   }
 }
 
@@ -77,7 +77,7 @@
     @include pseudo(290px, 243px, "");
     top: -5px;
 
-    background: url(../../images/dest/about/item-2/before-mobile.png) no-repeat;
+    background: url("../images/dest/about/item-2/before-mobile.png") no-repeat;
   }
 
   .about__description {
@@ -94,7 +94,7 @@
     top: -14px;
     left: -15px;
 
-    background: url(../../images/dest/about/item-3/before-mobile.png) no-repeat;
+    background: url("../images/dest/about/item-3/before-mobile.png") no-repeat;
   }
 
   .about__description {
@@ -113,7 +113,7 @@
     top: -5px;
     left: 4px;
 
-    background: url(../../images/dest/about/item-4/before-mobile.png) no-repeat;
+    background: url("../images/dest/about/item-4/before-mobile.png") no-repeat;
   }
 
   &:after {
@@ -121,7 +121,7 @@
     bottom: -73px;
     left: 135px;
 
-    background: url(../../images/dest/about/pseudo-mobile.png) no-repeat;
+    background: url("../images/dest/about/pseudo-mobile.png") no-repeat;
   }
 }
 
