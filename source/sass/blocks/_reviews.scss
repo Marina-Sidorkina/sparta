@@ -1,3 +1,12 @@
 .reviews__container {
   @include container;
 }
+
+.reviews__title {
+  @include sectionHeaderMobile;
+  @include resetSpaces;
+  padding-left: 6px;
+  margin-bottom: 58px;
+
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+.video {
+  position: relative;
+  width: 292px;
+  height: 164px;
+  margin: 0 auto;
+}
+
+.video__play {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 109px;
+  height: 113px;
+
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  transform: translateX(-50%) translateY(-50%);
+
+  background: url(../../images/dest/video/button/sprite-mobile.png) no-repeat;
+  background-position: -125px 0px;
+}
+
+.video__play:hover {
+  width: 125px;
+  height: 131px;
+
+  background: url(../../images/dest/video/button/sprite-mobile.png) no-repeat;
+  background-position: 0px 0px;
+}
+
+.video__play:active {
+  width: 109px;
+  height: 113px;
+
+  background: url(../../images/dest/video/button/sprite-mobile.png) no-repeat;
+  background-position: -125px 0px;
+}
