@@ -1,5 +1,6 @@
 .review-list {
   @include resetList;
+  margin-bottom: 42px;
 }
 
 .review-list__item {
@@ -52,8 +53,8 @@
   color: $text-color-medium;
 
   border: none;
-  outline: transparent;
   cursor: pointer;
+  outline: transparent;
   background: transparent;
 
   &::before {
