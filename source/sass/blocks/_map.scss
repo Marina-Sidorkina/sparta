@@ -1,6 +1,7 @@
 .map {
   width: 320px;
   padding-top: 73px;
+  margin-bottom: 68px;
 
   background: url("../images/dest/map/background/mobile.jpg") no-repeat;
   background-size: 320px 99x;
@@ -12,6 +13,7 @@
   @include sectionHeaderMobile;
   padding-left: 5px;
   min-height: 100px;
+  margin-bottom: 18px;
 
   line-height: 43px;
   text-align: center;
@@ -21,13 +23,7 @@
   background-position: top 8px left 0px;
 }
 
-.map__picture {
-  width: 320px;
-  height: 450px;
-}
-
 .map__illustration {
   width: 320px;
-  height: 450px;
-  margin-top: 20px;
+  height: 339px;
 }

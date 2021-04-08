@@ -1,3 +1,13 @@
+.questions {
+  width: 320px;
+  min-height: 623px;
+
+  background: url("../images/dest/questions/background/mobile.jpg") no-repeat;
+  background-size: 320px 617x;
+  background-position: top;
+}
+
 .questions__container {
   @include container;
+  padding-top: 70px;
 }
