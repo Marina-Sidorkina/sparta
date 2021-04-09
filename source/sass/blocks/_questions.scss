@@ -9,5 +9,73 @@
 
 .questions__container {
   @include container;
-  padding-top: 70px;
+  padding-top: 97px;
+}
+
+.questions__title {
+  @include resetSpaces;
+  margin-bottom: 17px;
+  padding-left: 2px;
+
+  font-family: "Besom", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 2.4px;
+  color: $text-color-light;
+}
+
+.questions__form {
+  width: 320px;
+}
+
+.questions__fieldset {
+  @include resetSpaces;
+  border: none;
+}
+
+.questions__legend {
+  @include resetSpaces;
+  margin-left: 15px;
+  margin-bottom: 40px;
+  padding-left: 1px;
+
+  font-family: "Core-45-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color-light;
+}
+
+.questions__input {
+  width: 290px;
+  height: 48px;
+  margin-bottom: 32px;
+  margin-left: 15px;
+  padding-left: 25px;
+  padding-bottom: 4px;
+
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.102);
+
+  font-family: "Core-45-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color-light;
+}
+
+.questions__input:last-child {
+  margin-bottom: 46px;
+}
+
+.questions__submit {
+  width: 307px;
+  height: 73px;
+  padding-top: 0;
+  padding-left: 9px;
+  padding-bottom: 30px;
+  margin-left: 10px;
+
+  border: none;
+  cursor: pointer;
+  outline: transparent;
 }
