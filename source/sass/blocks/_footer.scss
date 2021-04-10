@@ -1,3 +1,62 @@
 .footer__container {
   @include container;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  margin-bottom: 55px;
+}
+
+.footer__logo {
+  grid-row: 3/4;
+  width: 156px;
+  height: 56px;
+  margin-left: 63px;
+}
+
+.footer__copyright {
+  grid-row: 4/5;
+  width: 60px;
+  margin-left: 125px;
+  margin-top: -15px;
+
+  font-family: "Core-55-Medium", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-color-footer;
+  text-align: center;
+}
+
+.footer__conf {
+  position: relative;
+  @include resetSpaces;
+  grid-row: 2/3;
+  margin-bottom: 55px;
+  padding-left: 42px;
+
+  font-family: "Core-45-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-color-footer;
+  text-decoration: none;
+
+  &:after {
+    @include pseudo(196px, 1px, "");
+    bottom: -5px;
+    left: 41px;
+
+    background: url("../images/dest/footer/underline/mobile.png") no-repeat;
+    background-position: center;
+  }
+}
+
+.footer__tel {
+  grid-row: 1/2;
+  margin-bottom: 53px;
+
+  font-family: "Core-55-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: $text-color-footer;
+  text-align: center;
+  text-decoration: none;
 }
