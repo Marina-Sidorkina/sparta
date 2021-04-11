@@ -5,14 +5,19 @@
 .experience__container {
   @include container;
   @include column;
-  padding-top: 27px;
 }
 
 .experience__title--main {
   @include resetSpaces;
   @include sectionHeaderMobile;
-  padding-left: 8px;
-  margin-bottom: 36px;
+  width: 320px;
+  min-height: 70px;
+  padding-left: 10px;
+  margin-bottom: 37px;
+
+  background: url("../images/dest/experience/title/mobile.png") no-repeat;
+  background-size: 320px 70px;
+  background-position: top 14px left 0px;
 
   line-height: 43px;
   text-align: center;

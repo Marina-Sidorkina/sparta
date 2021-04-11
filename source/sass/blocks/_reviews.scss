@@ -9,8 +9,15 @@
 .reviews__title {
   @include sectionHeaderMobile;
   @include resetSpaces;
+  width: 320px;
+  min-height: 70px;
   padding-left: 6px;
-  margin-bottom: 58px;
+  padding-top: 12px;
+  margin-bottom: 42px;
+
+  background: url("../images/dest/reviews/title/mobile.png") no-repeat;
+  background-size: 289px 70px;
+  background-position: top 0px left 16px;
 
   text-align: center;
 }

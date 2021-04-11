@@ -3,7 +3,7 @@
 
   background: url("../images/dest/instructor/background/mobile.png") no-repeat;
   background-size: 320px 584px;
-  background-position: top 464px left 0;
+  background-position: top 480px left 0;
 }
 
 .instructor__container {
@@ -15,8 +15,16 @@
 .instructor__title {
   @include sectionHeaderMobile;
   @include resetSpaces;
+  width: 320px;
+  min-height: 69px;
   padding-left: 7px;
-  margin-bottom: 52px;
+  padding-top: 15px;
+  margin-bottom: 40px;
+
+  background: url("../images/dest/instructor/title/mobile.png") no-repeat;
+  background-size: 320px 69px;
+  background-position: top 0px left 0px;
+
   text-align: center;
 }
 

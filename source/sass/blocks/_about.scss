@@ -10,8 +10,15 @@
   @include sectionHeaderMobile;
   @include resetSpaces;
 
-  margin-left: 7px;
-  margin-bottom: 145px;
+  width: 320px;
+  min-height: 103px;
+  padding-left: 26px;
+  padding-top: 25px;
+  margin-bottom: 35px;
+
+  background: url("../images/dest/about/title/mobile.png") no-repeat;
+  background-size: 320px 103px;
+  background-position: top -5px left 0px;
 }
 
 .about__list {

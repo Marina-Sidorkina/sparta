@@ -16,8 +16,14 @@
 .skills__title {
   @include resetSpaces;
   @include sectionHeaderMobile;
+  width: 320px;
+  min-height: 87px;
   padding-left: 7px;
   margin-bottom: 67px;
+
+  background: url("../images/dest/skills/title/mobile.png") no-repeat;
+  background-size: 320px 87px;
+  background-position: top 14px left 0px;
 
   line-height: 43px;
   text-align: center;
