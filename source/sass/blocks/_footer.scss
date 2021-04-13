@@ -1,7 +1,6 @@
 .footer__container {
   @include container;
   display: grid;
-  grid-auto-flow: row;
   justify-content: stretch;
   margin-bottom: 55px;
 }
