@@ -10,8 +10,8 @@
 body {
   @include column;
   position: relative;
-  width: 320px;
-  min-width: 320px;
+  width: $mobile-width;
+  min-width: $mobile-width;
   margin: 0 auto;
 }
 
@@ -19,4 +19,10 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: $tablet-full-width;
+  }
 }

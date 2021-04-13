@@ -13,14 +13,14 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  margin-left: $grid-margin-left;
+  //margin-left: $grid-margin-left;
   width: $mobile-width;
   pointer-events: none;
 
   @include createGrid($grid-gutter, $grid-color, $grid-half-column-width);
 }
 
-/*@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .grid::before {
     width: $tablet-width;
   }
@@ -31,7 +31,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+/*@media (min-width: $desktop-width) {
   .grid::before {
     width: $desktop-width;
   }

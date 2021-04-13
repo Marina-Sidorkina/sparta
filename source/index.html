@@ -16,13 +16,14 @@
   <link rel="preload" href="fonts/besom/besom.woff2" as="font">
 </head>
 
-<body>
+<body class="grid">
   <!--HEADER-->
   <header class="header">
-    <div class="header__container grid">
+    <div class="header__container">
       <div class="header__top-panel top-panel">
         <picture class="top-panel__picture">
-          <img class="top-panel__logo" src="./images/dest/header/top-panel/logo-mobile.png" alt="Логотип сайта" aria-label="Логотип сайта спецкурса по выживанию в экстремальных условиях">
+          <source media="(min-width: 750px)" srcset="./images/dest/top-panel/logo-tablet.png">
+          <img class="top-panel__logo" src="./images/dest/top-panel/logo-mobile.png" alt="Логотип сайта" aria-label="Логотип сайта спецкурса по выживанию в экстремальных условиях">
         </picture>
         <h3 class="top-panel__title">Спецкурс</h3>
         <a class="top-panel__tel" href="tel:+79304150252" aria-label="

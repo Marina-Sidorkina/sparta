@@ -10,12 +10,12 @@
   grid-row: 1/2;
   width: 58px;
   height: 58px;
+  margin-left: -1px;
 }
 
 .top-panel__logo {
   width: 58px;
   height: 58px;
-  margin-left: -1px;
 }
 
 .top-panel__tel {
@@ -42,4 +42,35 @@
   letter-spacing: 11.2px;
   text-transform: lowercase;
   color: $text-color-light;
+}
+
+@media (min-width: $tablet-width) {
+  .top-panel {
+    grid-template-columns: 160px auto 152px;
+    grid-template-rows: 60px;
+    min-height: 60px;
+  }
+
+  .top-panel__picture {
+    width: 160px;
+    margin-left: 1px;
+    margin-top: 1px;
+  }
+
+  .top-panel__logo {
+    width: 160px;
+  }
+
+  .top-panel__tel {
+    padding-top: 1px;
+  }
+
+  .top-panel__title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    text-align: center;
+    padding-top: 17px;
+    padding-left: 9px;
+  }
 }

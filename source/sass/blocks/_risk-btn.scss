@@ -37,3 +37,10 @@
 .risk-btn--programm {
   margin-left: 8px;
 }
+
+@media (min-width: $tablet-width) {
+  .risk-btn--header {
+    margin-left: -4px;
+    padding-left: 106px;
+  }
+}

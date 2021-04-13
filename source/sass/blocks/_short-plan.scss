@@ -34,8 +34,27 @@
   flex-shrink: 0;
   width: 77px;
   margin-top: 3px;
+
   font-family: "Core-35-LightIt", "Arial", sans-serif;
   font-size: 14px;
   text-transform: none;
   color: $text-color-light;
+}
+
+@media (min-width: $tablet-width) {
+  .short-plan {
+    width: 320px;
+    margin-left: 200px;
+    margin-top: -4px;
+  }
+
+  .short-plan__item:nth-child(3) {
+    margin-right: 45px;
+  }
+
+  .short-plan__item:nth-child(4) {
+    margin-top: 5px;
+
+    line-height: 17px;
+  }
 }
