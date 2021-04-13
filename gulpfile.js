@@ -46,7 +46,7 @@ function styles() {
 	.pipe(sass())
 	.pipe(concat("index.min.css"))
 	.pipe(autoprefixer({
-    overrideBrowserslist: ["last 10 versions"],
+    overrideBrowserslist: ["last 3 versions"],
     grid: true
   }))
 	.pipe(cleancss({

@@ -1,7 +1,6 @@
 .footer__container {
   @include container;
   display: grid;
-  justify-content: stretch;
   margin-bottom: 55px;
 }
 
