@@ -47,6 +47,8 @@
   color: $text-color-light;
 }
 
+/* TABLET */
+
 @media (min-width: $tablet-width) {
   .top-panel {
     grid-template-columns: 160px auto 152px;

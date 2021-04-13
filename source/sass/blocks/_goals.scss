@@ -1,5 +1,5 @@
 .goals {
-  width: 320px;
+  width: $mobile-width;
   min-height: 1388px;
   margin-bottom: 26px;
 
@@ -11,6 +11,7 @@
 .goals__container {
   @include container;
   @include column;
+
   padding-top: 199px;
 }
 
@@ -60,11 +61,12 @@
   margin-bottom: 103px;
 
   .goals__item:nth-child(1) {
-    margin-bottom: 45px;
     position: relative;
+    margin-bottom: 45px;
 
     &:before {
       @include pseudo(auto, auto, "01");
+
       top: -14px;
       left: -2px;
 
@@ -116,6 +118,7 @@
 
   &:after {
     @include pseudo(106px, 116px, "");
+
     top: -14px;
     right: -5px;
 
@@ -126,6 +129,7 @@
 
 .goals__list--exept {
   @include resetList;
+
   padding-top: 45px;
 
   .goals__item:nth-child(1) {
@@ -150,5 +154,81 @@
     .goals__description {
       padding-left: 5px;
     }
+  }
+}
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .goals {
+    width: $tablet-full-width;
+    min-height: 985px;
+    margin-bottom: 0;
+
+    background: url("../images/dest/goals/background/tablet.png") no-repeat;
+    background-size: 765px 985px;
+  }
+
+  .goals__container {
+    display: grid;
+    grid-template-columns: 125px 125px 125px 345px;
+    grid-template-rows: 350px 350px;
+
+    padding-top: 180px;
+  }
+
+  .goals__title--main {
+    grid-row: 1/2;
+    grid-column: 1/4;
+
+    margin-left: 33px;
+    margin-top: -14px;
+    margin-bottom: 0;
+  }
+
+  .goals__list--main {
+    grid-row: 1/2;
+    grid-column: 3/5;
+
+    width: 450px;
+    min-height: 350.5px;
+    margin-bottom: 0;
+    padding-left: 59px;
+    padding-top: 51px;
+    padding-right: 10px;
+
+    .goals__item:nth-child(1) {
+      margin-bottom: 47px;
+
+      &:before {
+        left: -3px;
+      }
+    }
+  }
+
+  .goals__title--exept {
+    grid-row: 2/3;
+    grid-column: 2/4;
+
+    padding-left: 29px;
+    padding-bottom: 121px;
+
+    &:after {
+      @include pseudo(130px, 143px, "");
+
+      top: -26px;
+      left: -142px;
+
+      background: url("../images/dest/goals/mark/tablet.png") no-repeat;
+    }
+  }
+
+  .goals__list--exept {
+    grid-row: 2/3;
+    grid-column: 4/5;
+
+    min-height: 300px;
+    padding-left: 45px;
+    padding-top: 53px;
   }
 }
