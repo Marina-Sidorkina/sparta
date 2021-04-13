@@ -149,3 +149,131 @@
   text-align: center;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .about__container {
+    margin-bottom: 0;
+  }
+
+  .about__title {
+    @include sectionHeaderTablet;
+    width: $tablet-content-width;
+    min-height: 134px;
+    padding-left: 177px;
+    padding-top: 39px;
+    margin-bottom: 0;
+
+    background: url("../images/dest/about/title/tablet.png") no-repeat;
+    background-size: 709px 134px;
+    background-position: top 0 left 5px;
+  }
+
+  .about__list {
+    margin-bottom: 0;
+
+    &:before {
+      top: 21px;
+      left: 583px;
+    }
+
+    &:after {
+      bottom: 181px;
+      left: 196px;
+    }
+  }
+
+  .about__description {
+    text-align: left;
+  }
+
+  .about__item {
+    min-height: 290px;
+    margin-bottom: 0;
+  }
+
+  .about__item:nth-child(1) {
+    padding-left: 314px;
+    padding-right: 90px;
+    padding-top: 106px;
+
+    &:before {
+      top: 44px;
+      left: -5px;
+
+      background: url("../images/dest/about/item-1/before-tablet.png") no-repeat;
+    }
+
+    &:after {
+      top: 65px;
+      left: 600px;
+    }
+
+    .about__subtitle {
+      width: 100%;
+    }
+  }
+
+  .about__item:nth-child(2) {
+    min-height: 255px;
+    padding-left: 99px;
+    padding-right: 300px;
+    padding-top: 81px;
+
+    &:before {
+      top: 16px;
+      right: -8px;
+    }
+
+    .about__subtitle {
+      width: 270px;
+    }
+  }
+
+  .about__item:nth-child(3) {
+    min-height: 315px;
+    padding-left: 313px;
+    padding-right: 94px;
+    padding-top: 59px;
+
+    &:before {
+      top: -1px;
+      left: -17px;
+    }
+
+    .about__subtitle {
+      width: 100%;
+    }
+
+    .about__description {
+      width: auto;
+      padding-left: 0;
+    }
+
+    .about__nowrap {
+      white-space: nowrap;
+    }
+  }
+
+  .about__item:nth-child(4) {
+    min-height: 400px;
+    padding-left: 437px;
+    padding-top: 264px;
+
+    &:before {
+      @include pseudo(343px, 280px, "");
+      top: -21px;
+      left: 385px;
+
+      background: url("../images/dest/about/item-4/before-tablet.png") no-repeat;
+    }
+
+    &:after {
+      bottom: 220px;
+      left: 216px;
+    }
+
+    .about__subtitle {
+      width: 100%;
+    }
+  }
+}
