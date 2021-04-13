@@ -88,6 +88,7 @@
 
   &:before {
     @include pseudo(290px, 243px, "");
+
     top: -5px;
 
     background: url("../images/dest/about/item-2/before-mobile.png") no-repeat;
@@ -165,15 +166,20 @@
 @media (min-width: $tablet-width) {
   .about__container {
     margin-bottom: 63px;
+
+    background: url("../images/dest/about/background/tablet.png") no-repeat;
+    background-size: 493px 1041px;
+    background-position: top 57px left 115px;
   }
 
   .about__title {
     @include sectionHeaderTablet;
+
     width: $tablet-content-width;
     min-height: 134px;
     padding-left: 177px;
     padding-top: 39px;
-    margin-bottom: 0;
+    margin: 0 auto;
 
     background: url("../images/dest/about/title/tablet.png") no-repeat;
     background-size: 709px 134px;
@@ -273,6 +279,7 @@
 
     &:before {
       @include pseudo(343px, 280px, "");
+
       top: -21px;
       left: 385px;
 
