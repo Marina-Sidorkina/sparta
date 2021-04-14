@@ -48,3 +48,22 @@
     margin-left: -6px;
   }
 }
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .experience__title--main {
+    @include sectionHeaderTablet;
+
+    width: $tablet-content-width;
+    min-height: 120px;
+    padding-left: 4px;
+    padding-top: 39px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+
+    background: url("../images/dest/experience/title/tablet.png") no-repeat;
+    background-size: 543px 84px;
+    background-position: top 15px left 88px;
+  }
+}

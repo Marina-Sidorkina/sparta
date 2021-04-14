@@ -24,6 +24,10 @@
   color: $text-color-medium;
 }
 
+.art-marked-list__tablet {
+  display: none;
+}
+
 .art-marked-list__item:nth-child(1) {
   position: relative;
   min-height: 250px;
@@ -134,5 +138,92 @@
 
     background: url("../images/dest/art-marked-list/05/mobile.png") no-repeat;
     background-position: center;
+  }
+}
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .art-marked-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .art-marked-list__mobile {
+    display: none;
+  }
+
+  .art-marked-list__tablet {
+    display: inline;
+    white-space: nowrap;
+  }
+
+  .art-marked-list__item:nth-child(1),
+  .art-marked-list__item:nth-child(2),
+  .art-marked-list__item:nth-child(3),
+  .art-marked-list__item:nth-child(4),
+  .art-marked-list__item:nth-child(5) {
+    width: 360px;
+    min-height: 295px;
+    padding-top: 120px;
+    padding-right: 44px;
+    margin-bottom: 0;
+
+    .art-marked-list__title,
+    .art-marked-list__description {
+      @include resetSpaces;
+
+      text-align: left;
+    }
+
+    .art-marked-list__title {
+      margin-bottom: 14px;
+    }
+
+    &:after {
+      top: 0;
+      left: 1px;
+    }
+  }
+
+  .art-marked-list__item:nth-child(1) {
+    padding-right: 45px;
+  }
+
+  .art-marked-list__item:nth-child(2) {
+    padding-left: 14.5px;
+    padding-top: 118px;
+
+    &:after {
+      top: 0;
+      left: 15px;
+    }
+  }
+
+  .art-marked-list__item:nth-child(3) {
+    padding-top: 119px;
+  }
+
+  .art-marked-list__item:nth-child(4) {
+    padding-left: 14.5px;
+    padding-top: 118px;
+
+    &:after {
+      top: -1px;
+      left: 15px;
+    }
+  }
+
+  .art-marked-list__item:last-child {
+    min-height: 225px;
+    margin-left: 137px;
+    padding-top: 124px;
+
+    &:after {
+      top: 1px;
+      left: 0;
+    }
   }
 }
