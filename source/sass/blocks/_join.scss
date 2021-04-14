@@ -1,27 +1,31 @@
 .join {
   @include column;
+
   width: 320px;
   min-height: 510px;
 
-  background: url("../images/dest/join/background-mobile.png") no-repeat;
+  background: url("../images/dest/join/background/mobile.png") no-repeat;
   background-size: 320px 510px;
   background-position: top;
 }
 
 .join__container {
   @include container;
+
   padding-top: 140px;
 }
 
 .join__title {
   @include column;
   @include resetSpaces;
+
   align-items: stretch;
   margin-bottom: 52px;
 }
 
 .join__accent {
   margin-left: -1px;
+
   font-family: "Besom", "Arial", sans-serif;
   font-weight: 300;
   font-size: 80px;
@@ -50,4 +54,48 @@
 
 .join--second {
   margin-bottom: 51px;
+}
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .join {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: $tablet-full-width;
+    min-height: 369px;
+    padding-left: 23px;
+    padding-right: 22px;
+    padding-top: 18px;
+
+    background: url("../images/dest/join/background/tablet.png") no-repeat;
+    background-size: 765px 369px;
+    background-position: top 2px left 0;
+  }
+
+  .join__container {
+    width: 345px;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .join__title {
+    width: 345px;
+    padding-top: 43px;
+  }
+
+  .join__accent {
+    font-size: 90px;
+    letter-spacing: 4.5px;
+    line-height: 90px;
+  }
+
+  .join__plain {
+    margin-left: 1px;
+
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+  }
 }
