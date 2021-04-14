@@ -28,3 +28,80 @@
 .bio__item:nth-child(7) {
   margin-left: 2px;
 }
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .bio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    height: 300px;
+    padding-left: 0;
+    margin-bottom: 130px;
+  }
+
+  .bio__item:nth-child(1),
+  .bio__item:nth-child(2),
+  .bio__item:nth-child(3) {
+    width: 438px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 64px;
+  }
+
+  .bio__item:nth-child(4),
+  .bio__item:nth-child(5),
+  .bio__item:nth-child(6),
+  .bio__item:nth-child(7) {
+    width: 282px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 52px;
+  }
+
+  .bio__item:nth-child(1) {
+    padding-top: 20px;
+    padding-bottom: 9px;
+  }
+
+  .bio__item:nth-child(2) {
+    padding-right: 36px;
+
+    .bio__nowrap {
+      white-space: normal;
+    }
+
+    .bio__tablet-nowrap {
+      white-space: nowrap;
+    }
+  }
+
+  .bio__item:nth-child(3) {
+    padding-top: 9px;
+    padding-bottom: 40px;
+    padding-right: 45px;
+  }
+
+  .bio__item:nth-child(4) {
+    padding-top: 29px;
+    padding-bottom: 9px;
+  }
+
+  .bio__item:nth-child(6) {
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    .bio__tablet-spacing {
+      display: inline-block;
+      margin-left: 4px;
+    }
+  }
+
+  .bio__item:nth-child(7) {
+    padding-bottom: 31px;
+  }
+}

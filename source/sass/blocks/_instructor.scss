@@ -9,12 +9,14 @@
 .instructor__container {
   @include container;
   @include column;
+
   align-items: stretch;
 }
 
 .instructor__title {
   @include sectionHeaderMobile;
   @include resetSpaces;
+
   width: 320px;
   min-height: 69px;
   padding-left: 7px;
@@ -34,6 +36,7 @@
 
 .instructor__name {
   @include resetSpaces;
+
   margin-left: -3px;
   margin-bottom: 32px;
 
@@ -43,4 +46,39 @@
   letter-spacing: 1.2px;
   text-align: center;
   color: $text-color-colored;
+}
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .instructor {
+    width: $tablet-full-width;
+
+    background: url("../images/dest/instructor/background/tablet.png") no-repeat;
+    background-size: 479px 241px;
+    background-position: top 527px left 16px;
+  }
+
+  .instructor__title {
+    @include sectionHeaderTablet;
+
+    width: $tablet-content-width;
+    min-height: 90px;
+    padding-left: 45px;
+    padding-top: 18px;
+    margin-bottom: 47px;
+
+    background: url("../images/dest/instructor/title/tablet.png") no-repeat;
+    background-size: 505px 84px;
+    background-position: top 5px left 130px;
+  }
+
+  .instructor__picture {
+    margin-left: 212px;
+  }
+
+  .instructor__name {
+    margin-left: 0;
+    padding-right: 10px;
+  }
 }
