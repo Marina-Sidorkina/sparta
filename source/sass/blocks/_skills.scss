@@ -3,7 +3,7 @@
   min-height: 842px;
   margin-bottom: 48px;
 
-  background: url("../images/dest/skills/background-mobile.png") no-repeat;
+  background: url("../images/dest/skills/background/mobile.png") no-repeat;
   background-size: 107px 842px;
   background-position: top 95px left 0px;
 }
@@ -72,4 +72,58 @@
   padding-left: 58px;
   padding-right: 10px;
   margin-bottom: 0;
+}
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .skills {
+    width: $tablet-full-width;
+    min-height: 842px;
+
+    background: url("../images/dest/skills/background/tablet.png") no-repeat;
+    background-size: 466px 782px;
+    background-position: top 107px left 0px;
+  }
+
+  .skills__title {
+    @include sectionHeaderTablet;
+    width: $tablet-full-width;
+    min-height: 105px;
+    padding-left: 2px;
+    padding-top: 30px;
+    margin-bottom: 60px;
+
+    background: url("../images/dest/skills/title/tablet.png") no-repeat;
+    background-size: 756px 105px;
+    background-position: top -10px left 0px;
+  }
+
+  .skills__item:nth-child(1) {
+    padding-left: 274px;
+    padding-right: 275px;
+    margin-bottom: 73px;
+  }
+
+  .skills__item:nth-child(2) {
+    padding-left: 370px;
+    padding-right: 150px;
+    margin-bottom: 72px;
+  }
+
+  .skills__item:nth-child(3) {
+    padding-left: 442px;
+    padding-right: 50px;
+    margin-bottom: 106px;
+  }
+
+  .skills__item:nth-child(4) {
+    padding-left: 492px;
+    margin-bottom: 89px;
+  }
+
+  .skills__item:nth-child(5) {
+    padding-left: 502px;
+    padding-right: 0;
+  }
 }
