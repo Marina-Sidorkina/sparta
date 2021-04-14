@@ -80,6 +80,7 @@
   .skills {
     width: $tablet-full-width;
     min-height: 842px;
+    margin-bottom: 40px;
 
     background: url("../images/dest/skills/background/tablet.png") no-repeat;
     background-size: 466px 782px;
@@ -88,6 +89,7 @@
 
   .skills__title {
     @include sectionHeaderTablet;
+
     width: $tablet-full-width;
     min-height: 105px;
     padding-left: 2px;
