@@ -1,0 +1,19 @@
+.decoration {
+  width: 320px;
+
+  background: url("../images/dest/decoration/mobile.jpg") no-repeat;
+  background-size: 320px 727px;
+  background-position: top 829px left 0px;
+}
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .decoration {
+    width: $tablet-full-width;
+
+    background: url("../images/dest/decoration/tablet.jpg") no-repeat;
+    background-size: 765px 1894px;
+    background-position: top 62px left 0px;
+  }
+}

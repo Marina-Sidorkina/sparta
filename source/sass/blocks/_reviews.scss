@@ -25,6 +25,10 @@
 /* TABLET */
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    margin-bottom: 140px;
+  }
+
   .reviews__title {
     @include sectionHeaderTablet;
     width: $tablet-full-width;

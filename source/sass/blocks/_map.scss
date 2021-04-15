@@ -2,15 +2,12 @@
   width: 320px;
   padding-top: 73px;
   margin-bottom: 68px;
-
-  background: url("../images/dest/map/background/mobile.jpg") no-repeat;
-  background-size: 320px 99x;
-  background-position: top;
 }
 
 .map__title {
   @include resetSpaces;
   @include sectionHeaderMobile;
+
   padding-left: 5px;
   min-height: 100px;
   margin-bottom: 18px;
@@ -26,4 +23,34 @@
 .map__illustration {
   width: 320px;
   height: 339px;
+}
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: $tablet-full-width;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .map__title {
+    @include resetSpaces;
+    @include sectionHeaderTablet;
+
+    width: $tablet-full-width;
+    min-height: 105px;
+    padding-top: 17px;
+    margin-bottom: 0;
+
+    background: url("../images/dest/map/title/tablet.png") no-repeat;
+    background-size: 731px 105px;
+    background-position: top 0px left 17px;
+  }
+
+  .map__illustration {
+    width: $tablet-full-width;
+    height: 659px;
+    margin-top: 19px;
+  }
 }
