@@ -21,3 +21,20 @@
 
   text-align: center;
 }
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .reviews__title {
+    @include sectionHeaderTablet;
+    width: $tablet-full-width;
+    min-height: 90px;
+    padding-left: 1px;
+    padding-top: 12px;
+    margin-bottom: 38px;
+
+    background: url("../images/dest/reviews/title/tablet.png") no-repeat;
+    background-size: 347px 83px;
+    background-position: top 2px left 205px;
+  }
+}

@@ -38,3 +38,18 @@
   background: url("../images/dest/video/button/sprite-mobile.png") no-repeat;
   background-position: -125px 0px;
 }
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .video {
+    width: 723px;
+    height: 407px;
+    margin-bottom: 103px;
+  }
+
+  .video__play {
+    top: 53%;
+    left: 50%;
+  }
+}
