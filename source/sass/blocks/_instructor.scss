@@ -53,6 +53,7 @@
 @media (min-width: $tablet-width) {
   .instructor {
     width: $tablet-full-width;
+    margin-bottom: 20px;
 
     background: url("../images/dest/instructor/background/tablet.png") no-repeat;
     background-size: 479px 241px;
@@ -63,14 +64,15 @@
     @include sectionHeaderTablet;
 
     width: $tablet-content-width;
+    margin: 0 auto;
     min-height: 90px;
-    padding-left: 45px;
+    padding-left: 0;
     padding-top: 18px;
     margin-bottom: 47px;
 
     background: url("../images/dest/instructor/title/tablet.png") no-repeat;
     background-size: 505px 84px;
-    background-position: top 5px left 130px;
+    background-position: top 5px left 107px;
   }
 
   .instructor__picture {
