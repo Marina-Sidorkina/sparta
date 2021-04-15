@@ -1,5 +1,6 @@
 .review-list {
   @include resetList;
+
   margin-bottom: 42px;
 }
 
@@ -14,6 +15,15 @@
   margin-bottom: 30px;
 }
 
+.review-list__illustration {
+  width: 117px;
+  height: 156px;
+}
+
+.reviews-list__container {
+  @include column;
+}
+
 .review-list__author {
   @include resetSpaces;
   margin-bottom: 23px;
@@ -22,11 +32,12 @@
   font-size: 20px;
   line-height: 20px;
   color: $text-color-medium;
+  text-align: center;
 }
 
 .review-list__text {
   @include resetSpaces;
-  height: 145px;
+  max-height: 145px;
   margin-bottom: 18px;
 
   font-family: "Core-45-Regular", "Arial", sans-serif;
@@ -97,5 +108,57 @@
 
   &::after {
     background-position: -9px 0px;
+  }
+}
+
+/* TABLET */
+
+@media (min-width: $tablet-width) {
+  .review-list {
+    padding-left: 41px;
+    margin-bottom: 55px;
+  }
+
+  .review-list__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .review-list__picture {
+    @include resetSpaces;
+
+    width: 145px;
+    height: 193px;
+    margin-top: 19px;
+  }
+
+  .review-list__illustration {
+    @include resetSpaces;
+
+    width: 145px;
+    height: 193px;
+  }
+
+  .reviews-list__container {
+    align-items: flex-start;
+
+    width: 490px;
+    padding-left: 20px;
+  }
+
+  .review-list__author {
+    margin-top: 17px;
+    margin-left: 6px;
+  }
+
+  .review-list__text {
+    padding-left: 6px;
+
+    text-align: left;
+  }
+
+  .review-list__button {
+    margin-left: 5px;
   }
 }

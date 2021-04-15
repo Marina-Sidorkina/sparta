@@ -22,8 +22,8 @@
     <div class="header__container">
       <div class="header__top-panel top-panel">
         <picture class="top-panel__picture">
-          <source media="(min-width: 750px)" srcset="./images/dest/top-panel/logo-tablet.png">
-          <img class="top-panel__logo" src="./images/dest/top-panel/logo-mobile.png" alt="Логотип сайта" aria-label="Логотип сайта спецкурса по выживанию в экстремальных условиях">
+          <source media="(min-width: 750px)" srcset="images/dest/top-panel/logo-tablet.png">
+          <img class="top-panel__logo" src="images/dest/top-panel/logo-mobile.png" alt="Логотип сайта" aria-label="Логотип сайта спецкурса по выживанию в экстремальных условиях">
         </picture>
         <h3 class="top-panel__title">Спецкурс</h3>
         <a class="top-panel__tel" href="tel:+79304150252" aria-label="
@@ -240,7 +240,7 @@
       <!--REVIEWS__VIDEO-->
       <div class="reviews__video video">
         <picture class="video__picture">
-          <source media="(min-width: 750px)" srcset="./images/dest/video/background/tablet.jpg">
+          <source media="(min-width: 750px)" srcset="images/dest/video/background/tablet.jpg">
           <img class="video__illustration" src="images/dest/video/background/mobile.jpg" alt="Видеоотзыв" aria-label="Видео с отзывами">
         </picture>
         <button class="video__play" type="button" name="review" aria-label="Начать просмотр видео с отзывами"></button>
@@ -250,11 +250,16 @@
         <ul class="reviews__list review-list">
           <li class="review-list__item">
             <picture class="review-list__picture">
+              <source media="(min-width: 750px)" srcset="images/dest/review-list/author/01/tablet.jpg">
               <img class="review-list__illustration" src="images/dest/review-list/author/01/mobile.jpg" alt="Фото автора отзыва">
             </picture>
-            <h3 class="review-list__author">Дмитрий Весна</h3>
-            <p class="review-list__text">Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится. Каждый день плавать в одежде в речках (а это Мурманск детка), спать по 2 часа или совсем не спать, потому что надо совершать марш броски с пострадавшим в 140 кг. ,освоить альпинизм и совершать самостоятельные спуски и подъемы с крутых скал за 1 день делать носилки за 5 минут из подручных средств, есть ягоды по пол дня потому что другой еды нет, пить только из речки, ходить босиком по лесу весь день, делать укрытия, о которых даже в детстве не мечтал, спать под открытым небом без спальников... и палаток, и</p>
-            <button class="review-list__button" type="button" name="review">Читать весь отзыв</button>
+            <div class="reviews-list__container">
+              <h3 class="review-list__author">Дмитрий Весна</h3>
+                <p class="review-list__text">
+                  Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится. Каждый день плавать в одежде в речках (а это Мурманск детка), спать по 2 часа или совсем не спать, потому что надо совершать марш броски с пострадавшим в 140 кг. ,освоить альпинизм и совершать самостоятельные спуски и подъемы с крутых скал за 1 день делать носилки за 5 минут из подручных средств, есть ягоды по пол дня потому что другой еды нет, пить только из речки, ходить босиком по лесу весь день, делать укрытия, о которых даже в детстве не мечтал, спать под открытым небом без спальников... и палаток, и
+                </p>
+                <button class="review-list__button" type="button" name="review">Читать весь отзыв</button>
+            </div>
           </li>
         </ul>
         <!--REVIEWS__CONTROL-->
