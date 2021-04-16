@@ -296,3 +296,149 @@
     }
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    padding-top: 0;
+
+    background: url("../images/dest/about/background/desktop.png") no-repeat;
+    background-size: 686px 1041px;
+    background-position: top 39px left 139px;
+  }
+
+  .about__title {
+    @include sectionHeaderDesktop;
+    @include resetSpaces;
+
+    width: $desktop-width;
+    min-height: 190px;
+    padding-top: 51px;
+
+    text-align: center;
+
+    background: url("../images/dest/about/title/desktop.png") no-repeat;
+    background-size: 981px 186px;
+    background-position: top -5px left 93px;
+  }
+
+  .about__list {
+    &:before {
+      top: 76px;
+      left: 807px;
+    }
+
+    &:after {
+      bottom: 86px;
+      left: 222px;
+    }
+  }
+
+  .about__item {
+    min-height: 350px;
+  }
+
+  .about__item:nth-child(1) {
+    padding-left: 399px;
+    padding-right: 420px;
+    padding-top: 178px;
+
+    &:before {
+      @include pseudo(366px, 300px, "");
+
+      top: 67px;
+      left: 9px;
+
+      background: url("../images/dest/about/item-1/before-desktop.png") no-repeat;
+      background-size: 366px 300px;
+    }
+
+    &:after {
+      top: 120px;
+      left: 823px;
+    }
+
+    .about__subtitle {
+      width: 100%;
+    }
+  }
+
+  .about__item:nth-child(2) {
+    padding-left: 841px;
+    padding-right: 30px;
+    padding-top: 83px;
+
+    &:before {
+      @include pseudo(373px, 312px, "");
+
+      top: -20px;
+      left: 447px;
+
+      background: url("../images/dest/about/item-2/before-desktop.png") no-repeat;
+      background-size: 373px 312px;
+    }
+
+    .about__subtitle {
+      width: 100%;
+    }
+
+    .about__description {
+      width: 100%;
+    }
+  }
+
+  .about__item:nth-child(3) {
+    padding-left: 339px;
+    padding-right: 489px;
+    padding-top: 54px;
+
+    &:before {
+      @include pseudo(374px, 385px, "");
+
+      top: -27px;
+      left: -51px;
+
+      background: url("../images/dest/about/item-3/before-desktop.png") no-repeat;
+      background-size: 374px 385px;
+    }
+
+    .about__subtitle {
+      width: 100%;
+    }
+
+    .about__description {
+      width: 100%;
+    }
+  }
+
+  .about__item:nth-child(4) {
+    min-height: 300px;
+    padding-left: 852px;
+    padding-right: 30px;
+    padding-top: 19px;
+
+    &:before {
+      @include pseudo(393px, 321px, "");
+
+      top: -45px;
+      left: 435px;
+
+      background: url("../images/dest/about/item-4/before-desktop.png") no-repeat;
+      background-size: 393px 321px;
+    }
+
+    .about__subtitle {
+      width: 100%;
+    }
+
+    .about__description {
+      width: 100%;
+    }
+
+    &:after {
+      bottom: 125px;
+      left: 242px;
+    }
+  }
+}

@@ -25,6 +25,7 @@
 @mixin sectionHeaderMobile {
   font-family: "Core-95-Black", "Arial", sans-serif;
   font-size: 36px;
+  font-weight: 900;
   letter-spacing: 1.8px;
   text-transform: uppercase;
   color: $text-color-colored;
@@ -33,7 +34,19 @@
 @mixin sectionHeaderTablet {
   font-family: "Core-95-Black", "Arial", sans-serif;
   font-size: 48px;
+  font-weight: 900;
   letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: $text-color-colored;
+}
+
+@mixin sectionHeaderDesktop {
+  width: $desktop-width;
+
+  font-family: "Core-95-Black", "Arial", sans-serif;
+  font-size: 68px;
+  font-weight: 900;
+  letter-spacing: 3.4px;
   text-transform: uppercase;
   color: $text-color-colored;
 }
