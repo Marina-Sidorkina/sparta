@@ -50,7 +50,9 @@
 
   .map__illustration {
     width: $tablet-full-width;
-    height: 659px;
-    margin-top: 19px;
+    height: 610px;
+    margin-top: 0;
+
+    object-position: top 19px left 0px;
   }
 }
