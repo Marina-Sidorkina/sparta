@@ -6,9 +6,9 @@
     width: $tablet-content-width;
   }
 
-  /*@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: $desktop-content-width;
-  }*/
+  }
 }
 
 @mixin resetSpaces {

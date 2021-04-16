@@ -62,3 +62,12 @@
     line-height: 17px;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .short-plan {
+    margin-left: 6px;
+    margin-top: -5px;
+  }
+}

@@ -26,3 +26,9 @@ img {
     width: $tablet-full-width;
   }
 }
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 100%;
+  }
+}

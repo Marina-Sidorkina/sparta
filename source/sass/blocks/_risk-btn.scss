@@ -57,3 +57,13 @@
     background-position: 0px -146px;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .risk-btn--header {
+    margin-left: -849px;
+    margin-top: 62px;
+    padding-left: 107px;
+  }
+}

@@ -81,3 +81,43 @@
     text-align: center;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .top-panel {
+    grid-template-columns: 247px auto 205px;
+    grid-template-rows: 89px 48px 18px;
+    padding-top: 11px;
+  }
+
+  .top-panel__picture {
+    width: 247px;
+    height: 89px;
+    margin-left: 2px;
+    margin-top: 0;
+  }
+
+  .top-panel__logo {
+    width: 247px;
+    height: 89px;
+  }
+
+  .top-panel__title {
+    padding-left: 0;
+    padding-right: 25px;
+    padding-top: 28px;
+
+    font-size: 18px;
+    letter-spacing: 12.6px;
+  }
+
+  .top-panel__tel {
+    height: 89px;
+    padding-top: 28px;
+    padding-left: 2px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+}

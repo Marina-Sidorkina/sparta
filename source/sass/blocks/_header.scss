@@ -82,3 +82,43 @@
     }
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .header {
+    justify-content: flex-start;
+
+    width: 100%;
+    min-height: 1006px;
+
+    background: url("../images/dest/header/background/desktop.jpg") top center no-repeat #c3726a;
+  }
+
+  .header__title {
+    align-items: flex-start;
+
+    padding-top: 18px;
+
+    .header__title-first {
+      height: 169px;
+      margin-left: -8px;
+
+      font-size: 180px;
+      line-height: 180px;
+      letter-spacing: 9px;
+    }
+
+    .header__title-second {
+      padding-bottom: 15px;
+
+      font-size: 68px;
+      line-height: 68px;
+      letter-spacing: 3.4px;
+    }
+  }
+
+  .header__link {
+    margin-left: -200px;
+  }
+}

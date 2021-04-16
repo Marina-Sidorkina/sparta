@@ -23,21 +23,15 @@
 @media (min-width: $tablet-width) {
   .grid::before {
     width: $tablet-width;
-  }
-
-  .grid::before {
     $grid-gutter: $grid-gutter-tablet;
     @include createGrid($grid-gutter, $grid-color, $grid-half-column-width);
   }
 }
 
-/*@media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .grid::before {
     width: $desktop-width;
-  }
-
-  .grid::before {
     $grid-gutter: $grid-gutter-desktop;
     @include createGrid($grid-gutter, $grid-color, $grid-half-column-width);
   }
-}*/
+}
