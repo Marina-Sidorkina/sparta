@@ -1,6 +1,8 @@
 .header {
   @include column;
+
   justify-content: space-between;
+
   padding-bottom: 116px;
   margin-bottom: 48px;
 
@@ -22,6 +24,7 @@
 
 .header__title {
   @include column;
+
   margin: 0;
   margin-bottom: 30px;
 
@@ -31,6 +34,7 @@
 
     font-family: "Besom", "Arial", sans-serif;
     font-size: 102px;
+    font-weight: normal;
     letter-spacing: 4.5px;
     text-shadow: -0.279px 3.99px 7.92px rgba(0, 0, 0, 0.34);
     color: $text-color-colored;
@@ -98,11 +102,11 @@
   .header__title {
     align-items: flex-start;
 
-    padding-top: 18px;
+    padding-top: 17px;
 
     .header__title-first {
       height: 169px;
-      margin-left: -8px;
+      margin-left: -7px;
 
       font-size: 180px;
       line-height: 180px;
@@ -111,6 +115,7 @@
 
     .header__title-second {
       padding-bottom: 15px;
+      padding-top: 2px;
 
       font-size: 68px;
       line-height: 68px;
