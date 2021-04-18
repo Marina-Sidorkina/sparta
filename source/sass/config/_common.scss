@@ -9,9 +9,12 @@
 
 body {
   @include column;
+
   position: relative;
+
   width: $mobile-width;
   min-width: $mobile-width;
+  max-width: $desktop-full-width;
   margin: 0 auto;
 }
 

@@ -302,6 +302,7 @@
 @media (min-width: $desktop-width) {
   .about__container {
     padding-top: 0;
+    margin-bottom: 99px;
 
     background: url("../images/dest/about/background/desktop.png") no-repeat;
     background-size: 686px 1041px;
@@ -315,6 +316,7 @@
     width: $desktop-width;
     min-height: 190px;
     padding-top: 51px;
+    margin: 0 auto;
 
     text-align: center;
 

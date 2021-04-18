@@ -97,7 +97,9 @@
     width: 100%;
     min-height: 1006px;
 
-    background: url("../images/dest/header/background/desktop.jpg") top center no-repeat #c3726a;
+    background: url("../images/dest/header/background/desktop.jpg") no-repeat #c3726a;
+    background-size: 1920px 1006px;
+    background-position: top center;
   }
 
   .header__title {
