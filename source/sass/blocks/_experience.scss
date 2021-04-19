@@ -10,6 +10,7 @@
 .experience__title--main {
   @include resetSpaces;
   @include sectionHeaderMobile;
+
   width: 320px;
   min-height: 70px;
   padding-left: 10px;
@@ -26,6 +27,7 @@
 .experience__title--add {
   @include resetSpaces;
   @include sectionHeaderMobile;
+
   padding-left: 15px;
   margin-bottom: 39px;
 
@@ -88,5 +90,21 @@
       margin-left: 87px;
     }
   }
+}
 
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .experience__title--main {
+    @include resetSpaces;
+    @include sectionHeaderDesktop;
+
+    width: $desktop-content-width;
+    min-height: 140px;
+    padding-top: 40px;
+
+    background: url("../images/dest/experience/title/desktop.png") no-repeat;
+    background-size: 813px 125px;
+    background-position: top 11px left 157px;
+  }
 }
