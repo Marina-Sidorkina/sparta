@@ -42,11 +42,13 @@
 
   .experience__spacing {
     display: inline-block;
+
     margin-left: -6px;
   }
 
   .experience__nowrap:nth-of-type(3) {
     display: inline-block;
+
     margin-left: -7px;
   }
 }
@@ -106,5 +108,17 @@
     background: url("../images/dest/experience/title/desktop.png") no-repeat;
     background-size: 813px 125px;
     background-position: top 11px left 157px;
+  }
+
+  .experience__title--add {
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 145px;
+
+    text-align: center;
+
+    .experience__nowrap:nth-of-type(3) {
+      margin-left: 13px;
+    }
   }
 }

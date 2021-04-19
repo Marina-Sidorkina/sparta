@@ -54,6 +54,7 @@
 
 @mixin resetList {
   @include resetSpaces;
+
   list-style: none;
 }
 
@@ -67,10 +68,12 @@
 
 @mixin chainListNumber($content) {
   @include pseudo(auto, auto, $content);
+
   z-index: 10;
 
   font-family: "Core-85-Heavy", "Arial", sans-serif;
   font-size: 16px;
+  font-weight: 800;
   letter-spacing: 0.8px;
   line-height: 24px;
   color: $text-color-light;
@@ -78,6 +81,7 @@
 
 @mixin programmBefore($content) {
   @include pseudo(auto, auto, $content);
+
   z-index: 10;
 
   font-family: "Besom", "Arial", sans-serif;
