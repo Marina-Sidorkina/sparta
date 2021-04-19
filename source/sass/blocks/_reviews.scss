@@ -29,6 +29,10 @@
     margin-bottom: 140px;
   }
 
+  .reviews__container {
+    width: $tablet-content-width;
+  }
+
   .reviews__title {
     @include sectionHeaderTablet;
     width: $tablet-full-width;

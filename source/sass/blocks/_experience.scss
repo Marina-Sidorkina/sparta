@@ -97,6 +97,10 @@
 /* DESKTOP */
 
 @media (min-width: $desktop-width) {
+  .experience {
+    margin-bottom: 130px;
+  }
+
   .experience__title--main {
     @include resetSpaces;
     @include sectionHeaderDesktop;

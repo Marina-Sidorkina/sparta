@@ -115,6 +115,7 @@
 
 @media (min-width: $tablet-width) {
   .review-list {
+    width: $tablet-content-width;
     padding-left: 41px;
     margin-bottom: 55px;
   }

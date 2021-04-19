@@ -1,6 +1,4 @@
 .join {
-  @include column;
-
   width: 320px;
   min-height: 510px;
 
@@ -10,6 +8,13 @@
 }
 
 .join__container {
+  @include column;
+
+  width: 320px;
+  min-height: 510px;
+}
+
+.join__title-part {
   @include container;
 
   padding-top: 140px;
@@ -60,6 +65,15 @@
 
 @media (min-width: $tablet-width) {
   .join {
+    width: $tablet-full-width;
+    min-height: 369px;
+
+    background: url("../images/dest/join/background/tablet.jpg") no-repeat;
+    background-size: 765px 369px;
+    background-position: top 2px left 0;
+  }
+
+  .join__container {
     flex-direction: row;
     justify-content: space-between;
 
@@ -68,13 +82,9 @@
     padding-left: 23px;
     padding-right: 22px;
     padding-top: 18px;
-
-    background: url("../images/dest/join/background/tablet.jpg") no-repeat;
-    background-size: 765px 369px;
-    background-position: top 2px left 0;
   }
 
-  .join__container {
+  .join__title-part {
     width: 345px;
     padding-top: 0;
     margin: 0;
@@ -105,5 +115,75 @@
 
   .join--second {
     margin-bottom: 70px;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .join {
+    width: 100%;
+    min-height: 369px;
+
+    background: url("../images/dest/join/background/desktop.jpg") no-repeat;
+    background-size: 1920px 369px;
+    background-position: top center;
+  }
+
+  .join__container {
+    @include resetSpaces;
+
+    justify-content: flex-start;
+
+    width: $desktop-width;
+    min-height: 369px;
+    margin: 0 auto;
+  }
+
+  .join__title-part {
+    @include resetSpaces;
+
+    width: 840px;
+    margin-right: 0;
+  }
+
+  .join__title {
+    @include resetSpaces;
+
+    flex-direction: row;
+
+    width: 840px;
+    min-height: 120px;
+    padding-left: 9px;
+
+    .join__accent {
+      @include resetSpaces;
+
+      width: auto;
+      padding-top: 11px;
+
+      font-size: 120.7px;
+      font-weight: 400;
+      line-height: 120.7px;
+      letter-spacing: 6px;
+    }
+
+    .join__plain {
+      @include resetSpaces;
+
+      width: auto;
+      padding-left: 34px;
+      padding-top: 8px;
+
+      font-size: 41.38px;
+      font-weight: 900;
+      line-height: 49px;
+      letter-spacing: 2.069px;
+      white-space: normal;
+    }
+
+    .join__dektop-nowrap {
+      white-space: nowrap;
+    }
   }
 }
