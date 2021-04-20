@@ -9,6 +9,7 @@
 .reviews__title {
   @include sectionHeaderMobile;
   @include resetSpaces;
+
   width: 320px;
   min-height: 70px;
   padding-left: 6px;
@@ -29,12 +30,9 @@
     margin-bottom: 140px;
   }
 
-  .reviews__container {
-    width: $tablet-content-width;
-  }
-
   .reviews__title {
     @include sectionHeaderTablet;
+
     width: $tablet-full-width;
     min-height: 90px;
     padding-left: 1px;
@@ -44,5 +42,20 @@
     background: url("../images/dest/reviews/title/tablet.png") no-repeat;
     background-size: 347px 83px;
     background-position: top 2px left 205px;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .reviews__container {
+    @include resetSpaces;
+
+    width: $desktop-width;
   }
 }

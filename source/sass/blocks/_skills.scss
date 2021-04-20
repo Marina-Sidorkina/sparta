@@ -16,6 +16,7 @@
 .skills__title {
   @include resetSpaces;
   @include sectionHeaderMobile;
+
   width: 320px;
   min-height: 87px;
   padding-left: 7px;
@@ -32,6 +33,7 @@
 .skills__list {
   @include resetList;
   @include column;
+
   align-items: stretch;
 }
 
@@ -82,7 +84,7 @@
     min-height: 842px;
     margin-bottom: 40px;
 
-    background: url("../images/dest/skills/background/tablet.png") no-repeat;
+    background: url("../images/dest/skills/background/tablet.jpg") no-repeat;
     background-size: 466px 782px;
     background-position: top 107px left 0px;
   }
@@ -127,5 +129,71 @@
   .skills__item:nth-child(5) {
     padding-left: 502px;
     padding-right: 0;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .skills {
+    width: 1920px;
+    min-height: 1000px;
+    margin-bottom: 90px;
+
+    background: url("../images/dest/skills/background/desktop.jpg") no-repeat;
+    background-size: 1207px 873px;
+    background-position: top 121px left -1px;
+  }
+
+  .skills__title {
+    @include resetSpaces;
+    @include sectionHeaderDesktop;
+
+    width: $desktop-width;
+    min-height: 170px;
+    margin: 0 auto;
+    padding-top: 67px;
+
+    background: url("../images/dest/skills/title/tablet.png") no-repeat;
+    background-size: 1150px 157px;
+    background-position: top 6px left 2px;
+  }
+
+  .skills__container {
+    width: $desktop-width;
+  }
+
+  .skills__list {
+    padding-top: 69px;
+  }
+
+  .skills__item:nth-child(1) {
+    padding-left: 662px;
+    padding-right: 350px;
+    margin-bottom: 73px;
+  }
+
+  .skills__item:nth-child(2) {
+    padding-left: 758px;
+    padding-right: 200px;
+    margin-bottom: 72px;
+  }
+
+  .skills__item:nth-child(3) {
+    padding-left: 830px;
+    padding-right: 0px;
+    margin-bottom: 106px;
+  }
+
+  .skills__item:nth-child(4) {
+    padding-left: 880px;
+    padding-right: 50px;
+    margin-bottom: 89px;
+  }
+
+  .skills__item:nth-child(5) {
+    padding-left: 890px;
+    padding-right: 55px;
+    margin-bottom: 89px;
   }
 }

@@ -122,12 +122,12 @@
 
 @media (min-width: $desktop-width) {
   .join {
-    width: 100%;
+    width: 1920px;
     min-height: 369px;
 
     background: url("../images/dest/join/background/desktop.jpg") no-repeat;
     background-size: 1920px 369px;
-    background-position: top center;
+    background-position: top 0px left -1px;
   }
 
   .join__container {
@@ -185,5 +185,9 @@
     .join__dektop-nowrap {
       white-space: nowrap;
     }
+  }
+
+  .join--first {
+    margin-bottom: 90px;
   }
 }

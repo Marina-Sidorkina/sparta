@@ -84,3 +84,11 @@
     padding-right: 10px;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .instructor {
+    width: $desktop-width;
+  }
+}

@@ -56,3 +56,12 @@
     object-position: top 19px left 0px;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}

@@ -17,3 +17,11 @@
     background-position: top 62px center;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .decoration {
+    width: 100%;
+  }
+}

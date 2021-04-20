@@ -26,6 +26,7 @@
 
 .review-list__author {
   @include resetSpaces;
+
   margin-bottom: 23px;
 
   font-family: "Core-65-Bold", "Arial", sans-serif;
@@ -37,6 +38,7 @@
 
 .review-list__text {
   @include resetSpaces;
+
   max-height: 145px;
   margin-bottom: 18px;
 
@@ -51,7 +53,9 @@
 
 .review-list__button {
   @include resetSpaces;
+
   position: relative;
+
   display: block;
   width: 150px;
   margin-left: -5px;
@@ -70,6 +74,7 @@
 
   &::before {
     @include pseudo(151px, 1px, "");
+
     bottom: -2px;
     left: 1px;
 
@@ -79,6 +84,7 @@
 
   &::after {
     @include pseudo(9px, 6px, "");
+
     top: 12px;
     right: -3px;
 
@@ -115,7 +121,6 @@
 
 @media (min-width: $tablet-width) {
   .review-list {
-    width: $tablet-content-width;
     padding-left: 41px;
     margin-bottom: 55px;
   }
@@ -161,5 +166,13 @@
 
   .review-list__button {
     margin-left: 5px;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .review-list {
+    width: $desktop-width;
   }
 }

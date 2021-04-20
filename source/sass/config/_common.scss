@@ -33,5 +33,7 @@ img {
 @media (min-width: $desktop-width) {
   body {
     width: 100%;
+
+    overflow-x: hidden;
   }
 }

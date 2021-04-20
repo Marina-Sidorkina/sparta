@@ -10,6 +10,7 @@
 
 .questions__container {
   @include container;
+
   padding-top: 97px;
 }
 
@@ -33,11 +34,13 @@
 
 .questions__fieldset {
   @include resetSpaces;
+
   border: none;
 }
 
 .questions__legend {
   @include resetSpaces;
+
   margin-left: 15px;
   margin-bottom: 40px;
   padding-left: 1px;
@@ -83,6 +86,7 @@
 
 .questions__descr {
   position: relative;
+
   width: 290px;
   height: 48px;
   margin-bottom: 46px;
@@ -91,7 +95,9 @@
 
 .questions__descr:after{
   content: attr(data-title);
+
   position: absolute;
+
   top: -23px;
   left: 45px;
   width: 200px;
@@ -114,6 +120,7 @@
 
 .questions__descr:hover:after{
   opacity: 1;
+
   transform: translateY(0);
 }
 
@@ -194,5 +201,13 @@
   .questions__submit {
     width: 360px;
     padding-left: 10px;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .questions {
+    width: $desktop-width;
   }
 }

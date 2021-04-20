@@ -273,3 +273,11 @@
     margin-top: -7px;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .programm {
+    width: $desktop-width;
+  }
+}
