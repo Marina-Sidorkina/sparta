@@ -7,6 +7,7 @@
   background-size: 320px 1193px;
   background-position: top;
 }
+
 .programm__container {
   @include container;
   @include column;
@@ -116,6 +117,7 @@
 
   font-family: "Besom", "Arial", sans-serif;
   font-size: 54px;
+  font-weight: 400;
   line-height: 54px;
   letter-spacing: 2.7px;
   color: $text-color-colored;
@@ -278,6 +280,71 @@
 
 @media (min-width: $desktop-width) {
   .programm {
-    width: $desktop-width;
+    width: $desktop-full-width;
+    min-height: 1520px;
+    margin-bottom: 30px;
+
+    background: url("../images/dest/programm/background/desktop.jpg") no-repeat;
+    background-size: 1920px 1323px;
+    background-position: top 197px left -1px;
+  }
+
+  .programm__container {
+    padding-top: 10px;
+  }
+
+  .programm__title {
+    @include resetSpaces;
+    @include sectionHeaderDesktop;
+
+    width: $desktop-content-width;
+    min-height: 150px;
+    padding-top: 37px;
+    margin-bottom: 165px;
+
+    background: url("../images/dest/programm/title/desktop.png") no-repeat;
+    background-size: 778px 123px;
+    background-position: top 8px left 176px;
+  }
+
+  .programm__list {
+    align-content: space-between;
+
+    width: 842px;
+    margin-bottom: 75px;
+  }
+
+  .programm__item {
+    width: 375px;
+  }
+
+  .programm__item:nth-child(5),
+  .programm__item:nth-child(6),
+  .programm__item:nth-child(7),
+  .programm__item:nth-child(8),
+  .programm__item:nth-child(9) {
+    width: 344px;
+  }
+
+  .programm__join {
+    width: $desktop-content-width;
+    padding-top: 0;
+    padding-left: 142px;
+  }
+
+  .programm__join-text {
+    @include resetSpaces;
+
+    height: 90px;
+    padding-top: 9px;
+    margin-right: 48px;
+
+    font-size: 87px;
+    line-height: 87px;
+    letter-spacing: 4.35px;
+  }
+
+  .programm__link {
+    margin-top: 3px;
   }
 }

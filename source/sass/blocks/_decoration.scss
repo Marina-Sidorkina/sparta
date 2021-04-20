@@ -22,6 +22,8 @@
 
 @media (min-width: $desktop-width) {
   .decoration {
+    @include column;
+
     width: 100%;
   }
 }
