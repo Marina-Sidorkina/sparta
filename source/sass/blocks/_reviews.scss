@@ -51,11 +51,26 @@
   .reviews {
     width: $desktop-width;
     margin: 0 auto;
+    margin-bottom: 200px;
   }
 
   .reviews__container {
     @include resetSpaces;
 
     width: $desktop-width;
+  }
+
+  .reviews__title {
+    @include resetSpaces;
+    @include sectionHeaderDesktop;
+
+    width: $desktop-width;
+    min-height: 150px;
+    padding-top: 44px;
+    margin-bottom: 65px;
+
+    background: url("../images/dest/reviews/title/desktop.png") no-repeat;
+    background-size: 519px 124px;
+    background-position: top 14px left 319px;
   }
 }

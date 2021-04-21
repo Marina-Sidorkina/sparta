@@ -24,6 +24,10 @@
   .decoration {
     @include column;
 
-    width: 100%;
+    width: $desktop-full-width;
+
+    background: url("../images/dest/decoration/desktop.jpg") no-repeat;
+    background-size: 1920px 1894px;
+    background-position: top 129px left -1px;
   }
 }

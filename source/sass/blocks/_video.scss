@@ -53,3 +53,26 @@
     left: 50%;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: $desktop-width;
+    height: 642px;
+    margin-bottom: 103px;
+    padding-left: 13px;
+  }
+
+  .video__picture,
+  .video__illustration {
+    width: 1142px;
+    height: 642px;
+  }
+
+  .video__play {
+    top: 52.1%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-49.5%);
+  }
+}

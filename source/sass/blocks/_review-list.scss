@@ -173,6 +173,44 @@
 
 @media (min-width: $desktop-width) {
   .review-list {
-    width: $desktop-width;
+    min-height: 320px;
+    width: 1005px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    padding-left: 0;
+  }
+
+  .review-list__item {
+    min-height: 320px;
+  }
+
+  .review-list__picture,
+  .review-list__illustration {
+    @include resetSpaces;
+
+    width: 199px;
+    height: 265px;
+    margin-top: 19px;
+  }
+
+  .review-list__picture {
+    margin-top: 19px;
+    margin-left: 16px;
+    margin-right: 23px;
+  }
+
+  .review-list__author {
+    margin-top: 41px;
+    margin-left: 6px;
+  }
+
+  .reviews-list__container {
+    width: 760px;
+  }
+
+  .review-list__text {
+    width: 715px;
+    max-height: 175px;
+    margin-bottom: 9px;
   }
 }

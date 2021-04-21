@@ -197,4 +197,13 @@
   }
 }
 
+/* DESKTOP */
+
+@media (min-width: $desktop-width) {
+  .control {
+    padding-right: 0px;
+    padding-left: 27px;
+  }
+}
+
 
