@@ -208,6 +208,18 @@
 
 @media (min-width: $desktop-width) {
   .questions {
-    width: $desktop-width;
+    width: $desktop-full-width;
+    min-height: 870px;
+    padding-right: 2px;
+
+    background: url("../images/dest/questions/background/desktop.jpg") no-repeat;
+    background-size: 1920px 864x;
+    background-position: top 0px left -1px;
+  }
+
+  .questions__container {
+    width: 615px;
+    margin: 0 auto;
+    padding-top: 206px;
   }
 }
