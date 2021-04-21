@@ -61,7 +61,30 @@
 
 @media (min-width: $desktop-width) {
   .map {
-    width: $desktop-width;
+    width: $desktop-full-width;
     margin: 0 auto;
   }
+
+  .map__title {
+    @include resetSpaces;
+    @include sectionHeaderDesktop;
+
+    width: $desktop-width;
+    min-height: 190px;
+    padding-top: 58px;
+    margin: 0 auto;
+
+    background: url("../images/dest/map/title/tablet.png") no-repeat;
+    background-size: 1096px 156px;
+    background-position: top 26px left 34px;
+  }
+
+  .map__illustration {
+    width: $desktop-full-width;
+    height: 610px;
+    margin-top: 0;
+
+    object-position: top -37px left -1px;
+  }
 }
+
