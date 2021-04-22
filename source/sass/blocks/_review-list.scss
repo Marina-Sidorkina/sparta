@@ -1,11 +1,22 @@
 .review-list {
   @include resetList;
 
-  margin-bottom: 42px;
+  display: flex;
+
+  width: 290px;
+  min-height: 420px;
+  margin-bottom: 39px;
+
+  overflow-x: hidden;
 }
 
 .review-list__item {
   @include column;
+
+  flex-shrink: 0;
+
+  width: 290px;
+  min-height: 420px;
 }
 
 .review-list__picture {
@@ -39,7 +50,7 @@
 .review-list__text {
   @include resetSpaces;
 
-  max-height: 145px;
+  height: 145px;
   margin-bottom: 18px;
 
   font-family: "Core-45-Regular", "Arial", sans-serif;
@@ -59,6 +70,7 @@
   display: block;
   width: 150px;
   margin-left: -5px;
+  margin-bottom: 3px;
   padding-top: 1px;
 
   font-family: "Core-45-Regular", "Arial", sans-serif;
@@ -133,14 +145,19 @@
 
 @media (min-width: $tablet-width) {
   .review-list {
-    padding-left: 41px;
-    margin-bottom: 55px;
+    width: 720px;
+    min-height: 250px;
+    margin-bottom: 52px;
   }
 
   .review-list__item {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+
+    width: 720px;
+    min-height: 250px;
+    padding-left: 41px;
   }
 
   .review-list__picture {
@@ -185,15 +202,17 @@
 
 @media (min-width: $desktop-width) {
   .review-list {
+    @include resetSpaces;
     min-height: 320px;
-    width: 1005px;
-    margin: 0 auto;
+    width: 1170px;
     margin-bottom: 35px;
-    padding-left: 0;
   }
 
   .review-list__item {
     min-height: 320px;
+    width: 1170px;
+    padding-left: 82.5px;
+    padding-right: 82px;
   }
 
   .review-list__picture,
@@ -222,7 +241,7 @@
 
   .review-list__text {
     width: 715px;
-    max-height: 175px;
+    height: 175px;
     margin-bottom: 9px;
   }
 }
