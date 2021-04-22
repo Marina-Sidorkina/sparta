@@ -7,7 +7,7 @@
   min-height: 420px;
   margin-bottom: 39px;
 
-  overflow-x: hidden;
+  transition: all ease 1s;
 }
 
 .review-list__item {
@@ -241,7 +241,7 @@
 
   .review-list__text {
     width: 715px;
-    height: 175px;
+    height: auto;
     margin-bottom: 9px;
   }
 }

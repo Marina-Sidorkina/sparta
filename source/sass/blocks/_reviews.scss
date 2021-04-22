@@ -4,6 +4,8 @@
 
 .reviews__container {
   @include container;
+
+  overflow: hidden;
 }
 
 .reviews__title {
