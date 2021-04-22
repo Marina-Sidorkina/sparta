@@ -53,6 +53,18 @@
   }
 }
 
+.footer__conf:focus {
+  outline: none;
+}
+
+.footer__conf:focus-visible {
+  text-shadow: $shadow-color-colored;
+}
+
+.footer__conf:hover:focus-visible {
+  text-shadow: none;
+}
+
 .footer__tel {
   grid-row: 1/2;
 
@@ -64,6 +76,18 @@
   color: $text-color-footer;
   text-align: center;
   text-decoration: none;
+}
+
+.footer__tel:focus {
+  outline: none;
+}
+
+.footer__tel:focus-visible {
+  text-shadow: $shadow-color-colored;
+}
+
+.footer__tel:hover:focus-visible {
+  text-shadow: none;
 }
 
 /* TABLET */

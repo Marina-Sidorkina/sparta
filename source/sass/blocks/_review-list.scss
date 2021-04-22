@@ -117,6 +117,18 @@
   }
 }
 
+.review-list__button:focus {
+  outline: none;
+}
+
+.review-list__button:focus-visible {
+  text-shadow: $shadow-color-colored;
+}
+
+.review-list__button:hover:focus-visible {
+  text-shadow: none;
+}
+
 /* TABLET */
 
 @media (min-width: $tablet-width) {

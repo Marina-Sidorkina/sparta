@@ -26,6 +26,18 @@
   background-position: 0px 0px;
 }
 
+.risk-btn:focus {
+  outline: none;
+}
+
+.risk-btn:focus-visible {
+  text-shadow: $shadow-color-light;
+}
+
+.risk-btn:hover:focus-visible {
+  text-shadow: none;
+}
+
 .risk-btn--header {
   margin-left: 1px;
 }

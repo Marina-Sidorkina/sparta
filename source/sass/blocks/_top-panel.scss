@@ -33,6 +33,18 @@
   color: $text-color-light;
 }
 
+.top-panel__tel:focus {
+  outline: none;
+}
+
+.top-panel__tel:focus-visible {
+  text-shadow: $shadow-color-light;
+}
+
+.top-panel__tel:hover:focus-visible {
+  text-shadow: none;
+}
+
 .top-panel__title {
   grid-column: 1/4;
   grid-row: 3/4;

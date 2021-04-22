@@ -54,6 +54,23 @@
   }
 }
 
+.control__right:focus {
+  outline: none;
+}
+
+.control__right:focus-visible {
+  background-position: 0px 0px;
+}
+
+.control__left:focus {
+  outline: none;
+}
+
+.control__left:focus-visible {
+  background-position: 0px 0px;
+}
+
+
 .control__item {
   display: flex;
   height: 20px;

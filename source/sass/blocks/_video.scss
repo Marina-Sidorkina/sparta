@@ -39,6 +39,24 @@
   background-position: -125px 0px;
 }
 
+.video__play:focus {
+  outline: none;
+}
+
+.video__play:focus-visible::after {
+  @include pseudo(100px, 100px, "");
+
+  top: 0px;
+  left: 5px;
+
+  border: 3px dotted $text-color-light;
+  border-radius: 50%;
+}
+
+.video__play:hover:focus-visible::after {
+  display: none;
+}
+
 /* TABLET */
 
 @media (min-width: $tablet-width) {

@@ -11,10 +11,13 @@
   $grid-gutter: $grid-gutter-mobile;
 
   position: fixed;
+
   top: 0;
   bottom: 0;
+
   //margin-left: $grid-margin-left;
   width: $mobile-width;
+
   pointer-events: none;
 
   @include createGrid($grid-gutter, $grid-color, $grid-half-column-width);
@@ -22,16 +25,20 @@
 
 @media (min-width: $tablet-width) {
   .grid::before {
-    width: $tablet-width;
     $grid-gutter: $grid-gutter-tablet;
+
+    width: $tablet-width;
+
     @include createGrid($grid-gutter, $grid-color, $grid-half-column-width);
   }
 }
 
 @media (min-width: $desktop-width) {
   .grid::before {
-    width: $desktop-width;
     $grid-gutter: $grid-gutter-desktop;
+
+    width: $desktop-width;
+
     @include createGrid($grid-gutter, $grid-color, $grid-half-column-width);
   }
 }
