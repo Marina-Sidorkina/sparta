@@ -134,11 +134,11 @@
 }
 
 .review-list__button:focus-visible {
-  text-shadow: $shadow-color-colored;
+  outline: dotted $text-color-colored;
 }
 
 .review-list__button:hover:focus-visible {
-  text-shadow: none;
+  outline: none;
 }
 
 /* TABLET */
@@ -194,7 +194,21 @@
   }
 
   .review-list__button {
-    margin-left: 5px;
+    height: 30px;
+    width: 160px;
+    margin-left: 0;
+    padding-left: 5px;
+    padding-bottom: 5px;
+
+    &::before {
+      bottom: 3px;
+      left: 6px;
+    }
+
+    &::after {
+      top: 12px;
+      right: 2px;
+    }
   }
 }
 
@@ -203,6 +217,7 @@
 @media (min-width: $desktop-width) {
   .review-list {
     @include resetSpaces;
+
     min-height: 320px;
     width: 1170px;
     margin-bottom: 35px;
@@ -241,7 +256,7 @@
 
   .review-list__text {
     width: 715px;
-    height: auto;
+    height: 175px;
     margin-bottom: 9px;
   }
 }

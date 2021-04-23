@@ -31,11 +31,16 @@
 }
 
 .risk-btn:focus-visible {
-  text-shadow: $shadow-color-light;
+  outline: dotted $text-color-light;
+  background-position: 0px -73px;
+}
+
+.risk-btn--programm:focus-visible {
+  outline: dotted $text-color-colored;
 }
 
 .risk-btn:hover:focus-visible {
-  text-shadow: none;
+  outline: none;
 }
 
 .risk-btn--header {

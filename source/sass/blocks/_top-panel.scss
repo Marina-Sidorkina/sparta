@@ -38,11 +38,11 @@
 }
 
 .top-panel__tel:focus-visible {
-  text-shadow: $shadow-color-light;
+  outline: dotted $text-color-light;
 }
 
 .top-panel__tel:hover:focus-visible {
-  text-shadow: none;
+  outline: none;
 }
 
 .top-panel__title {

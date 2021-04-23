@@ -75,8 +75,15 @@
 }
 
 .questions__input:focus {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+}
+
+.questions__input:focus-visible {
+  outline: dotted $text-color-light;
+}
+
+.questions__input:hover:focus-visible {
+  outline: none;
 }
 
 .questions__input--tel {
