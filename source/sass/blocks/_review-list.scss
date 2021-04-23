@@ -60,6 +60,8 @@
   color: $text-color-medium;
 
   overflow-y: hidden;
+
+  transition: height 0.8s;
 }
 
 .review-list__button {
@@ -102,6 +104,12 @@
 
     background: url("../images/dest/review-list/button/sprite-mobile.png") no-repeat;
     background-position: -9px 0px;
+  }
+}
+
+.review-list__button--opened {
+  &::after {
+    transform: rotate(180deg);
   }
 }
 

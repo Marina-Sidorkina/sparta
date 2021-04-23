@@ -11,14 +11,4 @@ $text-color-medium: #4c4c4c;
 $text-color-colored: #ff0000;
 $text-color-footer: #3c313b;
 
-$shadow-color-light: 15px 10px 15px $text-color-light,
-  -15px 10px 15px $text-color-light,
-  -15px -10px 15px $text-color-light,
-  15px -10px 15px $text-color-light;
-
-$shadow-color-colored: 15px 10px 15px $text-color-colored,
-  -15px 10px 15px $text-color-colored,
-  -15px -10px 15px $text-color-colored,
-  15px -10px 15px $text-color-colored;
-
 $overlay-color: rgba(0, 0, 0, 0.7);
