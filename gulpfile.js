@@ -25,7 +25,9 @@ function server() {
 
 function scripts() {
   return src([
-		"source/js/index.js"
+		"source/js/blocks/slider/controls.js",
+    "source/js/blocks/slider/button.js",
+    "source/js/blocks/modal/open.js"
 	])
   .pipe(sourcemaps.init())
 	.pipe(babel({
