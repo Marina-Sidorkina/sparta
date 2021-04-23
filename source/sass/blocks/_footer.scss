@@ -53,6 +53,10 @@
   }
 }
 
+.footer__conf:hover {
+  color: $text-color-colored;
+}
+
 .footer__conf:focus {
   outline: none;
 }
@@ -76,6 +80,10 @@
   color: $text-color-footer;
   text-align: center;
   text-decoration: none;
+}
+
+.footer__tel:hover {
+  color: $text-color-colored;
 }
 
 .footer__tel:focus {

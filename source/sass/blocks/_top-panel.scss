@@ -33,6 +33,10 @@
   color: $text-color-light;
 }
 
+.top-panel__tel:hover {
+  color: $text-color-colored;
+}
+
 .top-panel__tel:focus {
   outline: none;
 }
