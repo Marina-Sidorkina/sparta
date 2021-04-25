@@ -10,7 +10,6 @@
 
 .skills__container {
   @include container;
-  @include column;
 }
 
 .skills__title {
@@ -32,9 +31,6 @@
 
 .skills__list {
   @include resetList;
-  @include column;
-
-  align-items: stretch;
 }
 
 .skills__item {
@@ -136,7 +132,7 @@
 
 @media (min-width: $desktop-width) {
   .skills {
-    width: 1920px;
+    width: $desktop-full-width;
     min-height: 1000px;
     margin-bottom: 90px;
 
