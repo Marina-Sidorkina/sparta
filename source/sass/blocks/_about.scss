@@ -1,9 +1,8 @@
 .about__container {
   @include container;
-  @include column;
 
   padding-top: 73px;
-  margin-bottom: 48px;
+  margin-bottom: 133px;
 }
 
 .about__title {
@@ -22,44 +21,65 @@
 }
 
 .about__list {
-  @include column;
   @include resetList;
 
   position: relative;
-  margin-bottom: 85px;
+
+  width: $mobile-content-width;
 
   color: $text-color-medium;
+
+  &:before,
+  &:after {
+    font-family: "Core-35-Light", "Arial", sans-serif;
+    font-size: 24px;
+    color: $text-color-colored;
+  }
 
   &:before {
     @include pseudo(auto, auto, "Start");
 
     top: -99px;
     left: 126px;
-
-    font-family: "Core-35-Light", "Arial", sans-serif;
-    font-size: 24px;
-    color: $text-color-colored;
   }
 
   &:after {
     @include pseudo(auto, auto, "Finish");
 
     bottom: -112px;
-
-    font-family: "Core-35-Light", "Arial", sans-serif;
-    font-size: 24px;
-    color: $text-color-colored;
+    left: 116px;
   }
 }
 
 .about__item {
-  @include column;
-
   position: relative;
 
-  width: 100%;
+  width: $mobile-content-width;
   min-height: 366px;
   margin-bottom: 53px;
+}
+
+.about__subtitle {
+  @include resetSpaces;
+
+  width: $mobile-content-width;
+  margin-bottom: 15px;
+
+  font-family: "Core-65-Bold", "Arial", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.about__description {
+  @include resetSpaces;
+
+  width: $mobile-content-width;
+
+  font-family: "Core-45-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
 }
 
 .about__item:nth-child(1) {
@@ -95,7 +115,8 @@
   }
 
   .about__description {
-    width: 270px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -113,8 +134,8 @@
   }
 
   .about__description {
-    width: 286px;
-    padding-left: 3px;
+    padding-left: 4px;
+    padding-right: 2px;
   }
 }
 
@@ -140,25 +161,6 @@
 
     background: url("../images/dest/about/pseudo-mobile.png") no-repeat;
   }
-}
-
-.about__subtitle {
-  @include resetSpaces;
-
-  margin-bottom: 15px;
-
-  font-family: "Core-65-Bold", "Arial", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-.about__description {
-  @include resetSpaces;
-
-  font-family: "Core-45-Regular", "Arial", sans-serif;
-  font-size: 16px;
-  text-align: center;
-  line-height: 24px;
 }
 
 /* TABLET */
@@ -187,6 +189,7 @@
   }
 
   .about__list {
+    width: $tablet-content-width;
     margin-bottom: 0;
 
     &:before {
@@ -200,18 +203,20 @@
     }
   }
 
+  .about__subtitle,
   .about__description {
+    width: $tablet-content-width;
+
     text-align: left;
   }
 
   .about__item {
+    width: $tablet-content-width;
     min-height: 290px;
     margin-bottom: 0;
   }
 
   .about__item:nth-child(1) {
-    padding-left: 314px;
-    padding-right: 90px;
     padding-top: 106px;
 
     &:before {
@@ -226,15 +231,15 @@
       left: 600px;
     }
 
-    .about__subtitle {
-      width: 100%;
+    .about__subtitle,
+    .about__description {
+      padding-left: 314px;
+      padding-right: 90px;
     }
   }
 
   .about__item:nth-child(2) {
     min-height: 255px;
-    padding-left: 99px;
-    padding-right: 300px;
     padding-top: 81px;
 
     &:before {
@@ -242,15 +247,15 @@
       right: -8px;
     }
 
-    .about__subtitle {
-      width: 270px;
+    .about__subtitle,
+    .about__description {
+      padding-left: 124px;
+      padding-right: 320px;
     }
   }
 
   .about__item:nth-child(3) {
     min-height: 315px;
-    padding-left: 313px;
-    padding-right: 94px;
     padding-top: 59px;
 
     &:before {
@@ -258,13 +263,10 @@
       left: -17px;
     }
 
-    .about__subtitle {
-      width: 100%;
-    }
-
+    .about__subtitle,
     .about__description {
-      width: auto;
-      padding-left: 0;
+      padding-left: 313px;
+      padding-right: 94px;
     }
 
     .about__nowrap {
@@ -274,7 +276,6 @@
 
   .about__item:nth-child(4) {
     min-height: 400px;
-    padding-left: 437px;
     padding-top: 264px;
 
     &:before {
@@ -291,8 +292,9 @@
       left: 216px;
     }
 
-    .about__subtitle {
-      width: 100%;
+    .about__subtitle,
+    .about__description {
+      padding-left: 437px;
     }
   }
 }
@@ -326,6 +328,8 @@
   }
 
   .about__list {
+    width: $desktop-content-width;
+
     &:before {
       top: 76px;
       left: 807px;
@@ -338,12 +342,16 @@
   }
 
   .about__item {
+    width: $desktop-content-width;
     min-height: 350px;
   }
 
+  .about__subtitle,
+  .about__description {
+    width: $desktop-content-width;
+  }
+
   .about__item:nth-child(1) {
-    padding-left: 399px;
-    padding-right: 420px;
     padding-top: 178px;
 
     &:before {
@@ -361,14 +369,14 @@
       left: 823px;
     }
 
-    .about__subtitle {
-      width: 100%;
+    .about__subtitle,
+    .about__description {
+      padding-left: 399px;
+      padding-right: 420px;
     }
   }
 
   .about__item:nth-child(2) {
-    padding-left: 841px;
-    padding-right: 30px;
     padding-top: 83px;
 
     &:before {
@@ -381,18 +389,14 @@
       background-size: 373px 312px;
     }
 
-    .about__subtitle {
-      width: 100%;
-    }
-
+    .about__subtitle,
     .about__description {
-      width: 100%;
+      padding-left: 841px;
+      padding-right: 30px;
     }
   }
 
   .about__item:nth-child(3) {
-    padding-left: 339px;
-    padding-right: 489px;
     padding-top: 54px;
 
     &:before {
@@ -405,19 +409,15 @@
       background-size: 374px 385px;
     }
 
-    .about__subtitle {
-      width: 100%;
-    }
-
+    .about__subtitle,
     .about__description {
-      width: 100%;
+      padding-left: 339px;
+      padding-right: 489px;
     }
   }
 
   .about__item:nth-child(4) {
     min-height: 300px;
-    padding-left: 852px;
-    padding-right: 30px;
     padding-top: 19px;
 
     &:before {
@@ -430,17 +430,15 @@
       background-size: 393px 321px;
     }
 
-    .about__subtitle {
-      width: 100%;
-    }
-
-    .about__description {
-      width: 100%;
-    }
-
     &:after {
       bottom: 125px;
       left: 242px;
+    }
+
+    .about__subtitle,
+    .about__description {
+      padding-left: 852px;
+      padding-right: 30px;
     }
   }
 }
