@@ -8,8 +8,6 @@
 }
 
 body {
-  @include column;
-
   position: relative;
 
   width: $mobile-width;
@@ -28,15 +26,11 @@ img {
 @media (min-width: $tablet-width) {
   body {
     width: $tablet-full-width;
-
-    overflow-x: hidden;
   }
 }
 
 @media (min-width: $desktop-width) {
   body {
     width: 100%;
-
-    overflow-x: hidden;
   }
 }

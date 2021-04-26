@@ -36,7 +36,7 @@
 
     textBlocks.forEach(item => {
       item.style.height = fullHeight + "px";
-      item.style.overflowY = "scroll";
+      item.style.overflowY = "auto";
     })
 
     buttons.forEach(item => {

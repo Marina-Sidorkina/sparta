@@ -6,15 +6,17 @@
 
 @media (min-width: $desktop-width) {
   .modal {
-    position: absolute;
+    position: fixed;
 
     top: 0;
     left: 0;
 
     width: 100%;
     height: 100%;
+    overflow-y: auto;
 
     background-color: $overlay-color;
+    z-index: 20;
   }
 
   .modal__container {
@@ -74,15 +76,15 @@
     background-position: -21px 0px;
   }
 
-  .modal__form {
-    @include column;
+  .modal__close:focus-visible {
+    background-position: 0px 0px;
   }
 
   .modal__fieldset {
     @include resetSpaces;
-    @include column;
 
     border: none;
+    text-align: center;
   }
 
   .modal__legend {
@@ -181,11 +183,15 @@
     padding-top: 0;
     padding-left: 10px;
     padding-bottom: 30px;
-    margin-left: -10px;
+    margin: 0 auto;
 
     border: none;
     cursor: pointer;
     outline: transparent;
+  }
+
+  .modal-open {
+    overflow: hidden;
   }
 }
 

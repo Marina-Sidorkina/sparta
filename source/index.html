@@ -44,7 +44,7 @@
         <li class="short-plan__item">3 дня с утра до вечера</li>
       </ul>
     </div>
-    <a class="header__link risk-btn  risk-btn--header" href="#form" aria-label="Открыть форму записи на курс">Рискнуть</a>
+    <a class="header__link risk-btn  risk-btn--header risk-btn--open" href="#form" aria-label="Открыть форму записи на курс">Рискнуть</a>
   </header>
   <!--MAIN-->
   <main class="main">
@@ -150,7 +150,7 @@
             <span class="join__plain">себя <span class="join__dektop-nowrap">на прочность</span></span>
           </h2>
         </div>
-        <a class="join__link risk-btn risk-btn--join" href="#form" aria-label="Открыть форму записи на курс">Рискнуть</a>
+        <a class="join__link risk-btn risk-btn--join risk-btn--open" href="#form" aria-label="Открыть форму записи на курс">Рискнуть</a>
       </div>
     </section>
     <!--SKILLS-->
@@ -184,7 +184,7 @@
       </div>
       <div class="programm__join">
         <div class="programm__join-text">Записаться и</div>
-        <a class="programm__link risk-btn  risk-btn--programm" href="#form" aria-label="Открыть форму записи на курс">Рискнуть</a>
+        <a class="programm__link risk-btn  risk-btn--programm risk-btn--open" href="#form" aria-label="Открыть форму записи на курс">Рискнуть</a>
       </div>
     </section>
     <!--INSTRUCTOR-->
@@ -238,7 +238,7 @@
               <span class="join__plain">себя <span class="join__dektop-nowrap">на прочность</span></span>
             </h2>
           </div>
-          <a class="join__link risk-btn risk-btn--join" href="#form" aria-label="Открыть форму записи на курс">Рискнуть</a>
+          <a class="join__link risk-btn risk-btn--join risk-btn--open" href="#form" aria-label="Открыть форму записи на курс">Рискнуть</a>
         </div>
       </section>
       <!--REVIEWS-->
@@ -381,7 +381,7 @@
             <input class="questions__input questions__input--tel" type="tel" name="tel" id="tel" value="Телефон" pattern="\+7[\s]{1}[0-9]{3}[\s]{1}[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
           </div>
         </fieldset>
-        <button class="questions__submit risk-btn risk-btn--questions" type="submit" name="question" formaction="#" formmethod="post" aria-label="Отправить запрос на звонок">Отправить</button>
+        <button class="questions__submit risk-btn risk-btn--questions" type="submit" name="question" aria-label="Отправить запрос на звонок">Отправить</button>
       </form>
     </section>
   </main>
@@ -401,21 +401,20 @@
   <div class="modal">
     <div class="modal__container">
       <h2 class="modal__title">Попробуй выжить</h2>
-      <button class="modal__close"></button>
+      <button class="modal__close" tabindex="3"></button>
       <form class="modal__form">
         <fieldset class="modal__fieldset">
           <legend class="modal__legend">Оставь свой номер телефона, наши менеджеры свяжутся с тобой для подтверждения заявки
           </legend>
           <label class="visually-hidden" for="name-modal">Ваше имя</label>
-          <input class="modal__input modal__input--name" type="text" name="name" id="name-modal" value="Имя" required>
+          <input class="modal__input modal__input--name" type="text" name="name" id="name-modal" value="Имя" tabindex="3" required>
           <div class="modal__descr" data-title="+7 XXX XXX-XX-XX">
             <label class="visually-hidden" for="tel-modal">Номер вашего телефона</label>
             <input class="modal__input modal__input--tel" type="tel" name="tel" id="tel-modal" value="Телефон"
-              pattern="\+7[\s]{1}[0-9]{3}[\s]{1}[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+              pattern="\+7[\s]{1}[0-9]{3}[\s]{1}[0-9]{3}-[0-9]{2}-[0-9]{2}" tabindex="3" required>
           </div>
         </fieldset>
-        <button class="modal__submit risk-btn risk-btn--modal" type="submit" name="question" formaction="#" formmethod="post"
-          aria-label="Отправить запрос на звонок">Отправить</button>
+        <button class="modal__submit risk-btn risk-btn--modal" type="submit" name="question" aria-label="Отправить запрос на звонок" tabindex="3">Отправить</button>
       </form>
     </div>
   </div>
