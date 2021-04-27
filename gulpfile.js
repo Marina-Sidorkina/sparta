@@ -26,6 +26,7 @@ function server() {
 function scripts() {
   return src([
     "source/js/config/picturefill.js",
+    "source/js/config/polyfill.js",
 		"source/js/blocks/review-list/controls.js",
     "source/js/blocks/review-list/button.js",
     "source/js/blocks/modal/open.js"
