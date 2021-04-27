@@ -43,10 +43,6 @@
   outline: none;
 }
 
-.risk-btn--header {
-  margin-left: 1px;
-}
-
 .risk-btn--join {
   margin-left: 8px;
 }
@@ -58,8 +54,7 @@
 
 @media (min-width: $tablet-width) {
   .risk-btn--header {
-    margin-left: -4px;
-    padding-left: 106px;
+    padding-left: 106.5px;
   }
 
   .risk-btn--join {
@@ -80,8 +75,6 @@
 
 @media (min-width: $desktop-width) {
   .risk-btn--header {
-    margin-left: -849px;
-    margin-top: 62px;
     padding-left: 107px;
   }
 
