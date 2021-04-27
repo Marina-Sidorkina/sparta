@@ -82,6 +82,11 @@
   line-height: 24px;
 }
 
+.about__spacing {
+  display: inline-block;
+  margin-left: 3px;
+}
+
 .about__item:nth-child(1) {
   padding-top: 256px;
 
@@ -171,7 +176,7 @@
 
     background: url("../images/dest/about/background/tablet.png") no-repeat;
     background-size: 493px 1041px;
-    background-position: top 57px left 115px;
+    background-position: top 57px left 116px;
   }
 
   .about__title {
@@ -194,12 +199,12 @@
 
     &:before {
       top: 21px;
-      left: 583px;
+      left: 584px;
     }
 
     &:after {
       bottom: 181px;
-      left: 196px;
+      left: 197px;
     }
   }
 
@@ -216,25 +221,29 @@
     margin-bottom: 0;
   }
 
+  .about__spacing {
+    margin-left: 0;
+  }
+
   .about__item:nth-child(1) {
     padding-top: 106px;
 
     &:before {
       top: 44px;
-      left: -5px;
+      left: -4px;
 
       background: url("../images/dest/about/item-1/before-tablet.png") no-repeat;
     }
 
     &:after {
       top: 65px;
-      left: 600px;
+      left: 601px;
     }
 
     .about__subtitle,
     .about__description {
-      padding-left: 314px;
-      padding-right: 90px;
+      padding-left: 315px;
+      padding-right: 89px;
     }
   }
 
@@ -244,13 +253,13 @@
 
     &:before {
       top: 16px;
-      right: -8px;
+      right: -9px;
     }
 
     .about__subtitle,
     .about__description {
-      padding-left: 124px;
-      padding-right: 320px;
+      padding-left: 125px;
+      padding-right: 319px;
     }
   }
 
@@ -260,13 +269,13 @@
 
     &:before {
       top: -1px;
-      left: -17px;
+      left: -16px;
     }
 
     .about__subtitle,
     .about__description {
-      padding-left: 313px;
-      padding-right: 94px;
+      padding-left: 314px;
+      padding-right: 93px;
     }
 
     .about__nowrap {
@@ -282,19 +291,19 @@
       @include pseudo(343px, 280px, "");
 
       top: -21px;
-      left: 385px;
+      left: 386px;
 
       background: url("../images/dest/about/item-4/before-tablet.png") no-repeat;
     }
 
     &:after {
       bottom: 220px;
-      left: 216px;
+      left: 217px;
     }
 
     .about__subtitle,
     .about__description {
-      padding-left: 437px;
+      padding-left: 438px;
     }
   }
 }
