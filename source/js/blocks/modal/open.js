@@ -3,7 +3,7 @@ const closeButton = document.querySelector(".modal__close");
 const modalElement = document.querySelector(".modal");
 const openButtons = document.querySelectorAll(".risk-btn--open");
 const controlWidth = 1170;
-
+console.log("GHBDTN");
 function openModal(evt) {
   let width = document.querySelector("body").offsetWidth;
 

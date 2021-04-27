@@ -1,15 +1,14 @@
 .top-panel {
-  display: grid;
-  grid-template-columns: 58px 80px 152px;
-  grid-template-rows: 58px 48px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  min-height: 124px;
+  width: $mobile-content-width;
+  height: 124px;
 }
 
 .top-panel__picture {
-  grid-column: 1/2;
-  grid-row: 1/2;
-
   width: 58px;
   height: 58px;
   margin-left: -1px;
@@ -21,10 +20,9 @@
 }
 
 .top-panel__tel {
-  grid-column: 3/4;
-  grid-row: 1/2;
-
+  width: 152px;
   height: 52px;
+  margin-left: -6px;
 
   font-family: "Core-55-Medium", "Arial", sans-serif;
   font-size: 18px;
@@ -50,11 +48,10 @@
 }
 
 .top-panel__title {
-  grid-column: 1/4;
-  grid-row: 3/4;
+  @include resetSpaces;
 
-  margin: 0;
-  padding: 0;
+  width: 145px;
+  margin-left: -1px;
 
   font-family: "Core-45-Regular", "Arial", sans-serif;
   font-size: 16px;
@@ -68,15 +65,16 @@
 
 @media (min-width: $tablet-width) {
   .top-panel {
-    grid-template-columns: 160px auto 152px;
-    grid-template-rows: 60px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
-    min-height: 60px;
+    width: $tablet-content-width;
+    height: 60px;
   }
 
   .top-panel__picture {
     width: 160px;
-    margin-left: 1px;
+    margin-left: 2px;
     margin-top: 1px;
   }
 
@@ -85,17 +83,15 @@
   }
 
   .top-panel__tel {
-    padding-top: 1px;
+    @include resetSpaces;
+
+    margin-top: 1px;
+    margin-right: -1px;
   }
 
   .top-panel__title {
-    grid-column: 2/3;
-    grid-row: 1/2;
-
     padding-top: 17px;
-    padding-left: 9px;
-
-    text-align: center;
+    margin-left: -4px;
   }
 }
 
@@ -103,16 +99,16 @@
 
 @media (min-width: $desktop-width) {
   .top-panel {
-    grid-template-columns: 247px auto 205px;
-    grid-template-rows: 89px 48px 18px;
-    padding-top: 11px;
+    width: $desktop-content-width;
+    height: 105px;
+    margin-bottom: 96px;
   }
 
   .top-panel__picture {
     width: 247px;
     height: 89px;
     margin-left: 2px;
-    margin-top: 0;
+    margin-top: 11px;
   }
 
   .top-panel__logo {
@@ -121,18 +117,18 @@
   }
 
   .top-panel__title {
-    padding-left: 0;
-    padding-right: 25px;
-    padding-top: 28px;
+    width: 165px;
+    padding-top: 39px;
+    margin-left: -40px;
 
     font-size: 18px;
     letter-spacing: 12.6px;
   }
 
   .top-panel__tel {
-    height: 89px;
-    padding-top: 28px;
-    padding-left: 2px;
+    width: 203px;
+    height: 105px;
+    padding-top: 38px;
 
     font-size: 24px;
     line-height: 24px;
