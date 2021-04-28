@@ -6,11 +6,12 @@
   background: url("../images/dest/goals/background/mobile.jpg") no-repeat #353b42;
   background-size: 320px 1388px;
   background-position: top;
+
+  color: $text-color-light;
 }
 
 .goals__container {
   @include container;
-  @include column;
 
   padding-top: 199px;
 }
@@ -24,7 +25,6 @@
   letter-spacing: 1.8px;
   line-height: 43.5px;
   text-transform: uppercase;
-  color: $text-color-light;
 }
 
 .goals__subtitle {
@@ -35,7 +35,6 @@
   letter-spacing: 1px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $text-color-light;
 }
 
 .goals__description {
@@ -44,12 +43,11 @@
   font-family: "Core-45-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: $text-color-light;
 }
 
 .goals__title--main {
   width: 216px;
-  margin-left: 13.5px;
+  margin-left: 44px;
   margin-bottom: 100px;
 }
 
@@ -57,9 +55,9 @@
   @include resetList;
 
   padding-top: 12px;
-  padding-left: 23px;
-  padding-right: 23px;
-  margin-bottom: 103px;
+  padding-left: 23.5px;
+  padding-right: 22.5px;
+  margin-bottom: 102.5px;
 
   .goals__item:nth-child(1) {
     position: relative;
@@ -69,7 +67,7 @@
       @include pseudo(auto, auto, "01");
 
       top: -14px;
-      left: -2px;
+      left: -3px;
 
       font-family: "Besom", "Arial", sans-serif;
       font-size: 45.92px;
@@ -132,28 +130,24 @@
   @include resetList;
 
   padding-top: 45px;
+  padding-left: 2.5px;
 
   .goals__item:nth-child(1) {
     margin-bottom: 39px;
 
     .goals__subtitle {
-      padding-left: 2px;
       margin-bottom: 16px;
-    }
-
-    .goals__description {
-      padding-left: 2px;
     }
   }
 
   .goals__item:nth-child(2) {
     .goals__subtitle {
-      padding-left: 4px;
+      padding-left: 2px;
       margin-bottom: 16px;
     }
 
     .goals__description {
-      padding-left: 5px;
+      padding-left: 2px;
     }
   }
 }
@@ -179,12 +173,14 @@
   }
 
   .goals__title--main {
+    @include resetSpaces;
+
     grid-row: 1/2;
     grid-column: 1/4;
 
-    margin-left: 33px;
-    margin-top: -14px;
-    margin-bottom: 0;
+    width: 250px;
+    padding-left: 33.5px;
+    padding-top: 104px;
   }
 
   .goals__list--main {
@@ -212,13 +208,13 @@
     grid-column: 2/4;
 
     padding-left: 29px;
-    padding-bottom: 121px;
+    padding-top: 73px;
 
     &:after {
       @include pseudo(130px, 143px, "");
 
-      top: -26px;
-      left: -142px;
+      top: 46px;
+      left: -141px;
 
       background: url("../images/dest/goals/mark/tablet.png") no-repeat;
     }
@@ -229,8 +225,22 @@
     grid-column: 4/5;
 
     min-height: 300px;
-    padding-left: 45px;
-    padding-top: 53px;
+    padding-top: 78px;
+
+    .goals__item:nth-child(1) {
+      .goals__subtitle,
+      .goals__description {
+        padding-left: 45.5px;
+      }
+    }
+
+    .goals__item:nth-child(2) {
+      .goals__subtitle,
+      .goals__description {
+        padding-left: 47.5px;
+      }
+    }
+
   }
 }
 
@@ -252,14 +262,12 @@
   }
 
   .goals__title--main {
-    @include resetSpaces;
-
     grid-row: 1/2;
     grid-column: 1/2;
 
     width: 390px;
-    padding-left: 73px;
-    padding-top: 1px;
+    padding-left: 72.5px;
+    padding-top: 132.5px;
 
     .goals__hyphen {
       display: none;
@@ -291,12 +299,12 @@
       }
 
       .goals__subtitle {
-        padding-left: 93px;
+        padding-left: 93.5px;
         margin-bottom: 16px;
       }
 
       .goals__description {
-        padding-left: 93px;
+        padding-left: 93.5px;
         padding-right: 70px;
       }
     }
@@ -314,27 +322,25 @@
       }
 
       .goals__subtitle {
-        padding-left: 6px;
+        padding-left: 6.5px;
         margin-bottom: 16px;
       }
 
       .goals__description {
-        padding-left: 6px;
+        padding-left: 6.5px;
         padding-right: 45px;
       }
     }
   }
 
   .goals__title--exept {
-    @include resetSpaces;
-
     grid-column: 1/2;
 
     padding-left: 157px;
-    padding-bottom: 54px;
+    padding-top: 105px;
 
     &:after {
-      top: -26px;
+      top: 79px;
       left: -14px;
     }
   }
