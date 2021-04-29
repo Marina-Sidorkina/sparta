@@ -1,6 +1,6 @@
 .join {
   width: 320px;
-  min-height: 510px;
+  height: 510px;
 
   background: url("../images/dest/join/background/mobile.jpg") no-repeat;
   background-size: 320px 510px;
@@ -8,10 +8,8 @@
 }
 
 .join__container {
-  @include column;
-
   width: 320px;
-  min-height: 510px;
+  height: 510px;
 }
 
 .join__title-part {
@@ -21,14 +19,13 @@
 }
 
 .join__title {
-  @include column;
   @include resetSpaces;
 
-  align-items: stretch;
   margin-bottom: 52px;
 }
 
 .join__accent {
+  display: block;
   margin-left: -1px;
 
   font-family: "Besom", "Arial", sans-serif;
@@ -41,8 +38,9 @@
 }
 
 .join__plain {
+  display: block;
   margin-top: -3px;
-  margin-left: 0.5px;
+  margin-left: 1px;
 
   font-family: "Core-95-Black", "Arial", sans-serif;
   font-size: 27px;
@@ -66,7 +64,7 @@
 @media (min-width: $tablet-width) {
   .join {
     width: $tablet-full-width;
-    min-height: 369px;
+    height: 369px;
 
     background: url("../images/dest/join/background/tablet.jpg") no-repeat;
     background-size: 765px 369px;
@@ -74,25 +72,27 @@
   }
 
   .join__container {
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
     width: $tablet-full-width;
-    min-height: 369px;
-    padding-left: 23px;
+    height: 369px;
+    padding-left: 23.5px;
     padding-right: 22px;
-    padding-top: 18px;
   }
 
   .join__title-part {
+    @include resetSpaces;
+
     width: 345px;
-    padding-top: 0;
-    margin: 0;
+    margin-top: 131px;
   }
 
   .join__title {
+    @include resetSpaces;
+
     width: 345px;
-    padding-top: 43px;
   }
 
   .join__accent {
@@ -123,7 +123,7 @@
 @media (min-width: $desktop-width) {
   .join {
     width: 1920px;
-    min-height: 369px;
+    height: 369px;
 
     background: url("../images/dest/join/background/desktop.jpg") no-repeat;
     background-size: 1920px 369px;
@@ -133,34 +133,32 @@
   .join__container {
     @include resetSpaces;
 
-    justify-content: flex-start;
-
     width: $desktop-width;
-    min-height: 369px;
+    height: 369px;
     margin: 0 auto;
+    padding-right: 18px;
   }
 
   .join__title-part {
     @include resetSpaces;
 
     width: 840px;
-    margin-right: 0;
   }
 
   .join__title {
     @include resetSpaces;
 
-    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
 
     width: 840px;
-    min-height: 120px;
-    padding-left: 9px;
+    margin-top: 130px;
+    padding-left: 8.5px;
 
     .join__accent {
       @include resetSpaces;
 
-      width: auto;
-      padding-top: 11px;
+      width: 430px;
 
       font-size: 120.7px;
       font-weight: 400;
@@ -171,9 +169,9 @@
     .join__plain {
       @include resetSpaces;
 
-      width: auto;
-      padding-left: 34px;
-      padding-top: 8px;
+      width: 330px;
+      margin-left: 6px;
+      margin-top: -3px;
 
       font-size: 41.38px;
       font-weight: 900;
