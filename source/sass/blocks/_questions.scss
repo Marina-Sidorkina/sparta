@@ -1,5 +1,5 @@
 .questions {
-  width: 320px;
+  width: $mobile-width;
   min-height: 623px;
   margin-bottom: 62px;
 
@@ -18,7 +18,7 @@
   @include resetSpaces;
 
   margin-bottom: 17px;
-  padding-left: 2px;
+  padding-left: 2.5px;
 
   font-family: "Besom", "Arial", sans-serif;
   font-size: 48px;
@@ -29,7 +29,7 @@
 }
 
 .questions__form {
-  width: 320px;
+  width: $mobile-width;
 }
 
 .questions__fieldset {
@@ -41,7 +41,7 @@
 .questions__legend {
   @include resetSpaces;
 
-  margin-left: 15px;
+  margin-left: 15.5px;
   margin-bottom: 40px;
   padding-left: 1px;
 
@@ -52,7 +52,7 @@
 }
 
 .questions__input {
-  width: 290px;
+  width: $mobile-content-width;
   height: 48px;
   margin-bottom: 32px;
   margin-left: 15px;
@@ -150,12 +150,14 @@
   .questions {
     width: $tablet-full-width;
     min-height: 638px;
-    padding-top: 0;
     margin-bottom: 0;
+    margin-top: -49px;
 
     background: url("../images/dest/questions/background/tablet.jpg") no-repeat;
     background-size: 765px 638x;
     background-position: top 8px left 0px;
+
+    z-index: 5;
   }
 
   .questions__container {
@@ -207,7 +209,7 @@
 
   .questions__submit {
     width: 360px;
-    padding-left: 10px;
+    padding-left: 11px;
   }
 }
 
@@ -216,17 +218,36 @@
 @media (min-width: $desktop-width) {
   .questions {
     width: $desktop-full-width;
-    min-height: 870px;
+    min-height: 907px;
     padding-right: 2px;
+    margin-top: -144px;
+    margin-bottom: 3px;
 
-    background: url("../images/dest/questions/background/desktop.jpg") no-repeat;
-    background-size: 1920px 864x;
+    background: url("../images/dest/questions/background/desktop.png") no-repeat;
+    background-size: 1920px 907px;
     background-position: top 0px left -1px;
   }
 
   .questions__container {
     width: 615px;
     margin: 0 auto;
-    padding-top: 206px;
+    padding-top: 246px;
+  }
+
+  .questions__title {
+    padding-left: 1.5px;
+  }
+
+  .questions__input {
+    padding-left: 26px;
+    margin-left: 6px;
+  }
+
+  .questions__descr {
+    margin-left: 6px;
+  }
+
+  .questions__input--tel {
+    margin-left: 0;
   }
 }

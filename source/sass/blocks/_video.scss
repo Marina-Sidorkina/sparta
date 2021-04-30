@@ -16,7 +16,7 @@
   border: none;
   cursor: pointer;
   outline: transparent;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-49.5%) translateY(-49.5%);
 
   background: transparent;
   background: url("../images/dest/video/button/sprite-mobile.png") no-repeat;
@@ -69,6 +69,8 @@
   .video__play {
     top: 53%;
     left: 50%;
+
+    transform: translateX(-48.5%) translateY(-49.5%);
   }
 }
 
