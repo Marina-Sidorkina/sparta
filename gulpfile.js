@@ -70,7 +70,10 @@ function styles() {
 function images() {
 	return src("source/images/src/**/*")
 	.pipe(newer("source/images/dest/"))
-	.pipe(imagemin())
+    .pipe(imagemin([
+      imagemin.mozjpeg({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 })
+    ]))
 	.pipe(dest("source/images/dest/"))
 }
 
