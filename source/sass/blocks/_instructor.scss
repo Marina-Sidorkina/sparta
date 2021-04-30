@@ -8,9 +8,6 @@
 
 .instructor__container {
   @include container;
-  @include column;
-
-  align-items: stretch;
 }
 
 .instructor__title {
@@ -19,7 +16,7 @@
 
   width: 320px;
   min-height: 69px;
-  padding-left: 7px;
+  padding-left: 6.5px;
   padding-top: 15px;
   margin-bottom: 40px;
 
@@ -31,14 +28,19 @@
 }
 
 .instructor__picture {
-  margin-bottom: 15px;
+  display: block;
+
+  width: $mobile-content-width;
+  height: $mobile-content-width;
+  margin-bottom: 19px;
 }
 
 .instructor__name {
   @include resetSpaces;
 
-  margin-left: -3px;
+  width: $mobile-content-width;
   margin-bottom: 32px;
+  padding-right: 5px;
 
   font-family: "Core-65-Bold", "Arial", sans-serif;
   font-size: 24px;
@@ -66,7 +68,7 @@
     width: $tablet-content-width;
     margin: 0 auto;
     min-height: 90px;
-    padding-left: 0;
+    padding-left: 1px;
     padding-top: 18px;
     margin-bottom: 47px;
 
@@ -76,12 +78,13 @@
   }
 
   .instructor__picture {
-    margin-left: 212px;
+    margin-left: 213px;
   }
 
   .instructor__name {
-    margin-left: 0;
-    padding-right: 10px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding-right: 9px;
   }
 }
 

@@ -89,18 +89,18 @@
 
     font-size: 120px;
     line-height: 120px;
-    letter-spacing: 6px;
+    letter-spacing: 5.5px;
   }
 
   .stats__item:nth-child(1) {
     .stats__count {
       padding-top: 12px;
-      margin-left: -2px;
+      margin-left: -1px;
     }
 
     .stats__category {
       width: auto;
-      padding-left: 25px;
+      padding-left: 25.5px;
       padding-top: 40px;
     }
   }
@@ -108,7 +108,7 @@
   .stats__item:nth-child(2) {
     .stats__count {
       padding-top: 13px;
-      margin-left: -2px;
+      margin-left: -1px;
     }
 
     .stats__category {
@@ -122,12 +122,12 @@
   .stats__item:nth-child(3) {
     .stats__count {
       padding-top: 13px;
-      padding-left: 17px;
+      padding-left: 18px;
     }
 
     .stats__category {
       width: auto;
-      padding-left: 14px;
+      padding-left: 14.5px;
       padding-top: 31px;
       padding-right: 30px;
     }
@@ -136,15 +136,15 @@
   .stats__item:nth-child(4) {
     .stats__count {
       padding-top: 11px;
-      padding-left: 12px;
+      padding-left: 13px;
       margin-left: 0;
     }
 
     .stats__category {
       width: auto;
-      padding-left: 25px;
+      padding-left: 25.5px;
       padding-top: 34px;
-      padding-right: 30px;
+      padding-right: 29px;
     }
   }
 }
@@ -221,7 +221,7 @@
       @include resetSpaces;
 
       padding-left: 86px;
-      padding-top: 43px;
+      padding-top: 42.5px;
     }
 
     .stats__category {

@@ -26,7 +26,7 @@
 
 .join__accent {
   display: block;
-  margin-left: -1px;
+  margin-left: -2px;
 
   font-family: "Besom", "Arial", sans-serif;
   font-weight: 400;
@@ -40,7 +40,6 @@
 .join__plain {
   display: block;
   margin-top: -3px;
-  margin-left: 1px;
 
   font-family: "Core-95-Black", "Arial", sans-serif;
   font-size: 27px;
@@ -96,6 +95,8 @@
   }
 
   .join__accent {
+    margin-left: -1px;
+
     font-size: 90px;
     letter-spacing: 4.5px;
     line-height: 90px;

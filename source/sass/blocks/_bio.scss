@@ -2,7 +2,7 @@
   @include resetList;
 
   padding-left: 44px;
-  margin-bottom: 42px;
+  margin-bottom: 66px;
 
   font-family: "Core-45-Regular", "Arial", sans-serif;
   font-size: 16px;
@@ -20,7 +20,6 @@
 
 .bio__item:nth-child(3) {
   margin-bottom: 26px;
-  margin-left: 1px;
 }
 
 .bio__item:nth-child(4),
@@ -29,6 +28,13 @@
 .bio__item:nth-child(7) {
   margin-left: 2px;
 }
+
+.bio__item:nth-child(6) {
+    .bio__spacing {
+      display: inline-block;
+      margin-left: 4px;
+    }
+  }
 
 /* TABLET */
 
@@ -50,7 +56,7 @@
     margin: 0;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 64px;
+    padding-left: 65px;
   }
 
   .bio__item:nth-child(4),
@@ -61,7 +67,7 @@
     margin: 0;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 52px;
+    padding-left: 53px;
   }
 
   .bio__item:nth-child(1) {
@@ -70,7 +76,7 @@
   }
 
   .bio__item:nth-child(2) {
-    padding-right: 36px;
+    padding-right: 34px;
 
     .bio__nowrap {
       white-space: normal;
@@ -95,11 +101,6 @@
   .bio__item:nth-child(6) {
     padding-top: 9px;
     padding-bottom: 9px;
-
-    .bio__tablet-spacing {
-      display: inline-block;
-      margin-left: 4px;
-    }
   }
 
   .bio__item:nth-child(7) {
