@@ -29,7 +29,8 @@ function scripts() {
     "source/js/config/polyfill.js",
 		"source/js/blocks/review-list/controls.js",
     "source/js/blocks/review-list/button.js",
-    "source/js/blocks/modal/open.js"
+    "source/js/blocks/modal/open.js",
+    "source/js/firebase/firebase.js"
 	])
   .pipe(sourcemaps.init())
 	.pipe(babel({

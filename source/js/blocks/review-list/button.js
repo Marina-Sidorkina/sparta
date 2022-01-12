@@ -67,5 +67,5 @@
     item.addEventListener('click', () => {
       !state ? setFullHeight() : setFixedHeight();
     });
-  })
+  });
 })();
