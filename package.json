@@ -4,7 +4,9 @@
   "description": "Project for Portfolio",
   "main": "index.js",
   "scripts": {
-    "lint:editorconfig": "editorconfig-checker"
+    "lint:editorconfig": "editorconfig-checker",
+    "build": "gulp build",
+    "start": "gulp"
   },
   "author": "Marina Sidorkina",
   "license": "ISC",
